@@ -1,0 +1,30 @@
+:host {
+	display: block;
+
+	> main {
+		display: grid;
+		grid-gap: 2rem;
+		margin: 2rem;
+		
+		codenames-scoreboard {
+			margin: -0.8rem 0 0.5rem 0;
+		}
+		
+		codenames-menu {
+			margin-top: 2rem;
+		}
+		
+		@media only screen and (min-width: 768px) {
+			grid-template-columns: minmax(15rem, 20rem) 1fr;
+		}
+		
+		@media only screen and (min-width: 1220px) {
+			grid-template-columns: minmax(15rem, 20rem) 2fr 1fr;
+		}
+		
+		@media only screen and (min-width: 1600px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-items: end;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+:host {
+	display: block;
+	width: 100%;
+	
+	form {
+		display: grid;
+		grid-gap: 1rem;
+		
+		.invalid {
+			color: #f44336;
+		}
+		
+		> mat-hint {
+			text-align: center;
+		}
+
+		@media only screen and (min-width: 576px) {
+			grid-template-columns: 1fr 1fr;
+			
+			> mat-hint {
+				grid-column: span 2;
+			}
+			
+			> mat-form-field {
+				grid-gap: 0;
+				grid-column: span 2;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 576px) {
+		width: 30rem;
+	}
+}

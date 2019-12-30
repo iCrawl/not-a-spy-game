@@ -1,0 +1,15 @@
+:host {
+	display: block;
+
+	> header {
+		> mat-toolbar {
+			display: grid;
+
+			span {
+				color: white;
+				font-size: 1.8rem;
+				justify-self: center;
+			}
+		}
+	}
+}

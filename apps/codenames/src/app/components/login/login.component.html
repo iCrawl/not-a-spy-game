@@ -1,0 +1,31 @@
+<form [formGroup]="loginForm">
+	<mat-hint class="invalid" *ngIf="noGameFound">
+		No game found.
+	</mat-hint>
+	
+	<mat-form-field appearance="outline">
+		<mat-label>Name</mat-label>
+		<input matInput type="text" id="name" required formControlName="name" name="name" placeholder="Name">
+		
+		<mat-error *ngIf="name!.invalid">
+			You need to enter a name.
+		</mat-error>
+	</mat-form-field>
+	
+	<mat-form-field appearance="outline">
+		<mat-label>Room</mat-label>
+		<input matInput type="text" id="room" required formControlName="room" name="room" placeholder="Room">
+		
+		<mat-error *ngIf="room!.invalid && room!.value.length">
+			Room name is required!
+		</mat-error>
+	</mat-form-field>
+		
+	<mat-form-field appearance="outline">
+		<mat-label>Password</mat-label>
+		<input matInput type="text" id="password" formControlName="password" name="password" placeholder="Password">
+	</mat-form-field>
+	
+	<button mat-stroked-button (click)="joinRoom()" [disabled]="!loginForm.valid">Enter room</button>
+	<button mat-stroked-button (click)="createRoom()" [disabled]="!loginForm.valid">Create room</button>
+</form>

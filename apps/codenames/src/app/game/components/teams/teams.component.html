@@ -1,0 +1,21 @@
+<aside>
+	<div>
+		<button mat-stroked-button class="red" (click)="joinTeam(0)" [disabled]="user?.team === 0">Join Red</button>
+		<ul class="team">
+			<li *ngFor="let player of filterTeams(0)">{{ player | highlightPlayer }}</li>
+		</ul>
+	</div>
+	<div>
+		<button mat-stroked-button class="blue" (click)="joinTeam(1)" [disabled]="user?.team === 1">Join Blue</button>
+		<ul class="team">
+			<li *ngFor="let player of filterTeams(1)">{{ player | highlightPlayer }}</li>
+		</ul>
+	</div>
+	<div id="unassigned" *ngIf="filterTeams(2).length">
+		<span>Unassigned</span>
+		<ul class="team">
+			<li *ngFor="let player of filterTeams(2)">{{ player.name }}</li>
+		</ul>
+	</div>
+	<button mat-stroked-button class="random" (click)="randomizeTeams()">Randomize Teams</button>
+</aside>

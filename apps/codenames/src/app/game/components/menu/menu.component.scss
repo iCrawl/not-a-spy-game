@@ -1,0 +1,14 @@
+:host {
+	display: block;
+	
+	> div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0.5rem;
+		width: 100%;
+		
+		> #new-game {
+			grid-column: span 2;
+		}
+	}
+}

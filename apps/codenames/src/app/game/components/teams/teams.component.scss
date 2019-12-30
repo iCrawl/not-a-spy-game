@@ -1,0 +1,77 @@
+:host {
+	display: block;
+
+	> aside {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0.5rem;
+		width: 100%;
+		
+		button {
+			width: 100%;
+		}
+		
+		#unassigned {
+			text-align: center;
+			grid-column: span 2;
+		}
+		
+		.red {
+			$color: #EF5350;
+			background: $color;
+			
+			&:hover {
+				color: $color;
+				background: none;
+			}
+			
+			&:disabled {
+				&:hover {
+					color: rgba(255, 255, 255, 0.3);
+				}
+				background: none;
+			}
+		}
+		
+		.blue {
+			$color: #2196F3;
+			background: $color;
+			
+			&:hover {
+				color: $color;
+				background: none;
+			}
+			
+			&:disabled {
+				&:hover {
+					color: rgba(255, 255, 255, 0.3);
+				}
+				background: none;
+			}
+		}
+		
+		.random {
+			grid-column: span 2;
+			background: #616161;
+			
+			&:hover {
+				background: none;
+			}
+		}
+		
+		.team {
+			list-style: none;
+			padding: 0;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		
+		@media only screen and (min-width: 768px) {
+			max-width: 20rem;
+		}
+		
+		@media only screen and (min-width: 1600px) {
+			min-width: 20rem;
+		}
+	}
+}

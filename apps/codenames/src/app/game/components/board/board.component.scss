@@ -1,0 +1,9 @@
+:host {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	
+	@media only screen and (min-width: 1200px) {
+		grid-template-columns: repeat(5, 170px);
+	}
+}

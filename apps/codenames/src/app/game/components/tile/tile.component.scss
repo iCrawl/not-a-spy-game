@@ -1,0 +1,66 @@
+:host {
+	display: block;
+
+	button {
+		$color: #000000;
+		$background: #FFFFFF;
+		background: rgba($background, 0.9);
+		border: none;
+		color: $color;
+		font-size: 1.5rem;
+		width: 100%;
+		height: 100%;
+		padding: 3.5rem 0;
+		
+		&:disabled {
+			color: rgba($color, 0.60);
+			background: rgba($background, 0.75);
+		}
+
+		&:disabled.spymaster {
+			color: $color;
+			background: rgba($background, 0.9);
+		}
+		
+		&:disabled.flipped {
+			color: $color;
+			background: rgba($background, 0.9);
+		}
+	}
+	
+	.red {
+		$color: #FFFFFF;
+		$background: rgba(#EF5350, 0.75);
+		color: $color !important;
+		background: $background !important;
+		
+		&:disabled {
+			color: $color;
+			background: $background;
+		}
+	}
+	
+	.blue {
+		$color: #FFFFFF;
+		$background: rgba(#2196F3, 0.75);
+		color: $color !important;
+		background: $background !important;
+		
+		&:disabled {
+			color: $color;
+			background: $background;
+		}
+	}
+	
+	.assassin {
+		$color: #FFFFFF;
+		$background: rgba(#616161, 0.75);
+		color: $color !important;
+		background: $background !important;
+		
+		&:disabled {
+			color: $color;
+			background: $background;
+		}
+	}
+}
