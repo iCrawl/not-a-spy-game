@@ -1,4 +1,5 @@
 import { Injectable, OnDestroy } from '@angular/core';
+import { debounce } from '@codenames/debounce';
 import { Game, Message, Room, User } from '@codenames/models';
 import { select, Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
@@ -20,16 +21,22 @@ export class WebSocketService implements OnDestroy {
 
 	public sub2!: Subscription;
 
+	public interval: any;
+
 	public subject = webSocket({
 		url: environment.webSocket,
 		openObserver: {
 			next: () => {
 				console.log('Connected to the WebSocket.');
+				this.interval = setInterval(() => this.heartbeat(), 15000);
 			},
 		},
 		closeObserver: {
 			next: () => {
-				this.webSocket();
+				clearInterval(this.interval);
+				this.interval = null;
+				console.log('Disconnected from the WebSocket.');
+				debounce(this.webSocket, 500);
 			},
 		},
 	});
@@ -56,6 +63,12 @@ export class WebSocketService implements OnDestroy {
 	public webSocket() {
 		if (this.sub2 && !this.sub2.closed) this.sub2.unsubscribe();
 		this.sub2 = this.subject.subscribe(msg => this.parse(msg));
+	}
+
+	public heartbeat() {
+		return this.subject.next({
+			event: Message.HEARTBEAT,
+		});
 	}
 
 	public joinRoom(room: any, player: any) {
@@ -129,6 +142,9 @@ export class WebSocketService implements OnDestroy {
 
 	public parse(payload: any) {
 		switch (payload.event) {
+			case Message.HEARTBEAT:
+				console.log('Heartbeat received.');
+				break;
 			case Message.CREATE_ROOM:
 			case Message.JOIN_ROOM:
 				this.store.dispatch(

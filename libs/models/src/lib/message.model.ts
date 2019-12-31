@@ -1,4 +1,5 @@
 export enum Message {
+	HEARTBEAT,
 	CREATE_ROOM,
 	JOIN_ROOM,
 	LEAVE_ROOM,

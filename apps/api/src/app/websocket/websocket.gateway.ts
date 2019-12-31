@@ -36,6 +36,11 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 		return this.roomService.leave(room, player);
 	}
 
+	@SubscribeMessage(Message.HEARTBEAT)
+	public handleHearbeatMessage() {
+		return { event: Message.HEARTBEAT };
+	}
+
 	@SubscribeMessage(Message.CREATE_ROOM)
 	public handleCreateRoomMessage(@ConnectedSocket() client: WebSocket, @MessageBody() payload: RoomPayload) {
 		const room = this.roomService.create(client, payload.room, payload.player);
