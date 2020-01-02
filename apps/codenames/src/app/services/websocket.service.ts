@@ -11,7 +11,7 @@ import { TILES_SET } from '../game/store/actions/tiles.actions';
 import { TURN_SET } from '../game/store/actions/turn.actions';
 import { App } from '../models/app.model';
 import { PLAYERS_SET, ROOM_SET } from '../store/actions/room.actions';
-import { USER_SET } from '../store/actions/user.actions';
+import { USER_LOGGED_IN, USER_SET } from '../store/actions/user.actions';
 
 @Injectable({
 	providedIn: 'root',
@@ -141,6 +141,9 @@ export class WebSocketService implements OnDestroy {
 	}
 
 	public parse(payload: any) {
+		if (!payload.data) {
+			return this.store.dispatch(USER_LOGGED_IN());
+		}
 		switch (payload.event) {
 			case Message.HEARTBEAT:
 				console.log('Heartbeat received.');
@@ -150,6 +153,7 @@ export class WebSocketService implements OnDestroy {
 				this.store.dispatch(
 					ROOM_SET({ name: payload.data.name, password: payload.data.password, players: payload.data.players }),
 				);
+				this.store.dispatch(USER_LOGGED_IN());
 			case Message.NEW_GAME:
 			case Message.FLIP_TILE:
 				this.store.dispatch(

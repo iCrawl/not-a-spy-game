@@ -38,8 +38,13 @@ export class LoginComponent implements OnInit, OnDestroy {
 			.pipe(
 				select(state => state),
 				map(state => {
-					if (state.game.tiles.length) return this.router.navigate(['/board']);
-					if (state.user.loggedIn && !state.game.tiles.length) this.noGameFound = true;
+					if (state.user.loggedIn) {
+						if (state.game.tiles.length) {
+							return this.router.navigate(['/board']);
+						} else if (!state.game.tiles.length) {
+							this.noGameFound = true;
+						}
+					}
 				}),
 			)
 			.subscribe();
@@ -73,7 +78,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 				name: this.name!.value,
 				team: Team.UNASSIGNED,
 				role: Role.GUESSER,
-				loggedIn: true,
+				loggedIn: false,
 			}),
 		);
 		this.webSocketService.joinRoom(
@@ -90,7 +95,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 				name: this.name!.value,
 				team: Team.UNASSIGNED,
 				role: Role.GUESSER,
-				loggedIn: true,
+				loggedIn: false,
 			}),
 		);
 		this.webSocketService.createRoom(

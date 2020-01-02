@@ -18,6 +18,7 @@ const _userReducer = createReducer(
 	on(UserActions.USER_TEAM_BLUE, state => ({ ...state, team: Team.BLUE })),
 	on(UserActions.USER_ROLE_GUESSER, state => ({ ...state, role: Role.GUESSER })),
 	on(UserActions.USER_ROLE_SPYMASTER, state => ({ ...state, role: Role.SPYMASTER })),
+	on(UserActions.USER_LOGGED_IN, state => ({ ...state, loggedIn: true })),
 	on(UserActions.USER_SET, (state, user) => ({ ...state, ...user })),
 );
 
