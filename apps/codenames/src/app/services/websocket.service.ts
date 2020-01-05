@@ -141,7 +141,7 @@ export class WebSocketService implements OnDestroy {
 	}
 
 	public parse(payload: any) {
-		if (!payload.data) {
+		if (payload.event !== Message.HEARTBEAT && !payload.data) {
 			return this.store.dispatch(USER_LOGGED_IN());
 		}
 		switch (payload.event) {
