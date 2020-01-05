@@ -11,4 +11,14 @@
 	.blue {
 		color: #2196f3;
 	}
+	
+	.turn {
+		&::before {
+			content: '[';
+		}
+		
+		&::after {
+			content: ']';
+		}
+	}
 }
