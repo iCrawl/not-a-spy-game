@@ -7,7 +7,7 @@
 		grid-gap: 0.5rem;
 		width: 100%;
 		
-		> #new-game {
+		> #new-game, #end-turn {
 			grid-column: span 2;
 		}
 	}

@@ -89,4 +89,12 @@ describe('WebsocketGateway', () => {
 		expect(gateway.handleFlipTileMessage(p)).toBe(null);
 		expect(service.rooms[0].game.tiles[0].flipped).toBe(true);
 	});
+
+	it('should handle end turn', () => {
+		const p = { ...payload, event: Message.END_TURN };
+
+		expect(service.rooms[0].game.turn).toBe(Team.RED);
+		expect(gateway.handleEndTurnMessage(p)).toBe(null);
+		expect(service.rooms[0].game.turn).toBe(Team.BLUE);
+	});
 });

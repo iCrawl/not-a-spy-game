@@ -1,5 +1,6 @@
 export enum Message {
 	HEARTBEAT,
+	HEARTBEAT_RECV,
 	CREATE_ROOM,
 	JOIN_ROOM,
 	LEAVE_ROOM,
@@ -7,5 +8,6 @@ export enum Message {
 	RANDOMIZE_TEAMS,
 	SWITCH_ROLE,
 	FLIP_TILE,
+	END_TURN,
 	NEW_GAME,
 }

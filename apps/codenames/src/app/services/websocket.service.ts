@@ -131,6 +131,15 @@ export class WebSocketService implements OnDestroy {
 		});
 	}
 
+	public endTurn(room: Room) {
+		return this.subject.next({
+			event: Message.END_TURN,
+			data: {
+				room,
+			},
+		});
+	}
+
 	public newGame(room: Room) {
 		return this.subject.next({
 			event: Message.NEW_GAME,
@@ -141,11 +150,11 @@ export class WebSocketService implements OnDestroy {
 	}
 
 	public parse(payload: any) {
-		if (payload.event !== Message.HEARTBEAT && !payload.data) {
+		if (payload.event !== Message.HEARTBEAT_RECV && !payload.data) {
 			return this.store.dispatch(USER_LOGGED_IN());
 		}
 		switch (payload.event) {
-			case Message.HEARTBEAT:
+			case Message.HEARTBEAT_RECV:
 				console.log('Heartbeat received.');
 				break;
 			case Message.CREATE_ROOM:

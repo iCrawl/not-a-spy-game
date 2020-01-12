@@ -17,6 +17,9 @@ import { USER_ROLE_GUESSER, USER_ROLE_SPYMASTER } from '../../../store/actions/u
 			<button mat-stroked-button (click)="setRole(1)" [disabled]="spymaster">
 				Become Spymaster
 			</button>
+			<button mat-stroked-button id="end-turn" (click)="endTurn()">
+				End Turn
+			</button>
 			<button mat-stroked-button id="new-game" (click)="newGame()">
 				New Game
 			</button>
@@ -56,6 +59,10 @@ export class MenuComponent implements OnInit, OnDestroy {
 	public setRole(role: Role) {
 		this.store.dispatch(role === Role.GUESSER ? USER_ROLE_GUESSER() : USER_ROLE_SPYMASTER());
 		this.webSocketService.setRole(this.room, this.user);
+	}
+
+	public endTurn() {
+		this.webSocketService.endTurn(this.room);
 	}
 
 	public newGame() {

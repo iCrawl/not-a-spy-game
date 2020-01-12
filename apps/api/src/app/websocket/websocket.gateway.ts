@@ -10,9 +10,17 @@ interface Payload {
 	event: number;
 }
 
-export interface RoomPayload extends Payload {
+export interface PartialRoomPayload extends Payload {
 	room: Pick<Room, 'name' | 'password'>;
 	player: Pick<Player, 'id' | 'name'>;
+}
+
+interface PlayerPayload extends PartialRoomPayload {
+	player: Player;
+}
+
+interface RoomPayload extends Payload {
+	room: Room;
 }
 
 interface FlipTilePayload extends Payload {
@@ -38,28 +46,28 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 
 	@SubscribeMessage(Message.HEARTBEAT)
 	public handleHearbeatMessage() {
-		return { event: Message.HEARTBEAT };
+		return { event: Message.HEARTBEAT_RECV };
 	}
 
 	@SubscribeMessage(Message.CREATE_ROOM)
-	public handleCreateRoomMessage(@ConnectedSocket() client: WebSocket, @MessageBody() payload: RoomPayload) {
+	public handleCreateRoomMessage(@ConnectedSocket() client: WebSocket, @MessageBody() payload: PartialRoomPayload) {
 		const room = this.roomService.create(client, payload.room, payload.player);
 		return { event: Message.CREATE_ROOM, data: room };
 	}
 
 	@SubscribeMessage(Message.JOIN_ROOM)
-	public handleJoinRoomMessage(@ConnectedSocket() client: WebSocket, @MessageBody() payload: RoomPayload) {
+	public handleJoinRoomMessage(@ConnectedSocket() client: WebSocket, @MessageBody() payload: PartialRoomPayload) {
 		const room = this.roomService.join(client, payload.room, payload.player);
 		return { event: Message.JOIN_ROOM, data: room };
 	}
 
 	@SubscribeMessage(Message.LEAVE_ROOM)
-	public handleLeaveRoomMessage(@MessageBody() payload: RoomPayload) {
+	public handleLeaveRoomMessage(@MessageBody() payload: PartialRoomPayload) {
 		return this.roomService.leave(payload.room, payload.player);
 	}
 
 	@SubscribeMessage(Message.SWITCH_TEAM)
-	public handleSwitchTeamMessage(@MessageBody() payload: any) {
+	public handleSwitchTeamMessage(@MessageBody() payload: PlayerPayload) {
 		const send = { event: Message.SWITCH_TEAM };
 		const room = this.roomService.findOneRoom(payload.room);
 		if (!room) return send;
@@ -71,7 +79,7 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 	}
 
 	@SubscribeMessage(Message.RANDOMIZE_TEAMS)
-	public handleRandomizeTeamsMessage(@MessageBody() payload: any) {
+	public handleRandomizeTeamsMessage(@MessageBody() payload: RoomPayload) {
 		const send = { event: Message.RANDOMIZE_TEAMS };
 		const room = this.roomService.findOneRoom(payload.room);
 		if (!room) return send;
@@ -84,7 +92,7 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 	}
 
 	@SubscribeMessage(Message.SWITCH_ROLE)
-	public handleSwitchRoleMessage(@MessageBody() payload: any) {
+	public handleSwitchRoleMessage(@MessageBody() payload: PlayerPayload) {
 		const send = { event: Message.SWITCH_ROLE };
 		const room = this.roomService.findOneRoom(payload.room);
 		if (!room) return send;
@@ -101,7 +109,21 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 		const room = this.roomService.findOneRoom(payload.room);
 		if (!room) return send;
 		const tile = room.game.flipTile(payload.idx);
-		room.game.setTurn(payload.game.turn, tile.type);
+		room.game.setTurn(room.game.turn, tile.type);
+		const [guesser, spymaster] = room.for(Role.BOTH);
+		room.players.forEach(player => {
+			player.webSocket.send(JSON.stringify({ ...send, data: player.role === Role.SPYMASTER ? spymaster : guesser }));
+		});
+		return null;
+	}
+
+	@SubscribeMessage(Message.END_TURN)
+	public handleEndTurnMessage(@MessageBody() payload: RoomPayload) {
+		const send = { event: Message.FLIP_TILE };
+		const room = this.roomService.findOneRoom(payload.room);
+		if (!room) return send;
+		if (room.game.turn === Team.ASSASSIN) return send;
+		room.game.setTurn(room.game.turn, room.game.turn === Team.RED ? Team.BLUE : Team.RED);
 		const [guesser, spymaster] = room.for(Role.BOTH);
 		room.players.forEach(player => {
 			player.webSocket.send(JSON.stringify({ ...send, data: player.role === Role.SPYMASTER ? spymaster : guesser }));
@@ -110,7 +132,7 @@ export class WebsocketGateway implements OnGatewayDisconnect {
 	}
 
 	@SubscribeMessage(Message.NEW_GAME)
-	public handleNewGameMessage(@MessageBody() payload: any) {
+	public handleNewGameMessage(@MessageBody() payload: RoomPayload) {
 		const send = { event: Message.NEW_GAME };
 		const room = this.roomService.findOneRoom(payload.room);
 		if (!room) return send;
