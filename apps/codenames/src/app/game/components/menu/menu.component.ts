@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Role, Room, User } from '@codenames/models';
+import { Game, Role, Room, User } from '@codenames/models';
 import { select, Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -17,7 +17,12 @@ import { USER_ROLE_GUESSER, USER_ROLE_SPYMASTER } from '../../../store/actions/u
 			<button mat-stroked-button (click)="setRole(1)" [disabled]="spymaster">
 				Become Spymaster
 			</button>
-			<button mat-stroked-button id="end-turn" (click)="endTurn()">
+			<button
+				mat-stroked-button
+				id="end-turn"
+				(click)="endTurn()"
+				[disabled]="user?.role === 1 || game?.turn !== user?.team"
+			>
 				End Turn
 			</button>
 			<button mat-stroked-button id="new-game" (click)="newGame()">
@@ -34,6 +39,8 @@ export class MenuComponent implements OnInit, OnDestroy {
 
 	public room!: Room;
 
+	public game!: Game;
+
 	public constructor(private readonly store: Store<App>, private readonly webSocketService: WebSocketService) {}
 
 	public get spymaster() {
@@ -47,6 +54,7 @@ export class MenuComponent implements OnInit, OnDestroy {
 				map(state => {
 					this.user = state.user;
 					this.room = state.room;
+					this.game = state.game;
 				}),
 			)
 			.subscribe();
