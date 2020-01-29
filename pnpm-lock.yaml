@@ -39,7 +39,7 @@ devDependencies:
   '@nrwl/node': 8.9.0_d9f36d24ab2b72d0617949e8e86dd29d
   '@nrwl/workspace': 8.9.0
   '@types/express': 4.17.2
-  '@types/jest': 24.0.25
+  '@types/jest': 24.9.1
   '@types/nanoid': 2.1.0
   '@types/node': 13.5.0
   '@types/supertest': 2.0.8
@@ -156,7 +156,6 @@ packages:
       yarn: '>= 1.13.0'
     peerDependencies:
       '@angular/compiler-cli': '>=9.0.0-beta < 10'
-      '@angular/localize': '*'
       typescript: '>=3.6 < 3.8'
     peerDependenciesMeta:
       '@angular/localize':
@@ -2489,12 +2488,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-UpYjBi8xefVChsCoBpKShdxTllC9pwISirfoZsUa2AAdQg/Jd2KQGtSbw+ya7GPo7x/wAPlH6JBhKhAsXUEZNA==
-  /@types/jest/24.0.25:
+  /@types/jest/24.9.1:
     dependencies:
       jest-diff: 24.9.0
     dev: true
     resolution:
-      integrity: sha512-hnP1WpjN4KbGEK4dLayul6lgtys6FPz0UfxMeMQCv0M+sTnzN3ConfiO72jHgLxl119guHgI8gLqDOrRLsyp2g==
+      integrity: sha512-Fb38HkXSVA4L8fGKEZ6le5bB8r6MRWlOCZbVuWZcmOMSCd2wCYOwN1ibj8daIoV9naq7aaOZjrLCoCMptKU/4Q==
   /@types/json-schema/7.0.4:
     dev: true
     resolution:
@@ -2630,7 +2629,6 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.0.0
       tsutils: 3.17.1_typescript@3.6.5
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2664,7 +2662,6 @@ packages:
       '@typescript-eslint/typescript-estree': 2.17.0_typescript@3.6.5
       eslint: 6.8.0
       eslint-visitor-keys: 1.1.0
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2685,7 +2682,6 @@ packages:
       lodash: 4.17.15
       semver: 6.3.0
       tsutils: 3.17.1_typescript@3.6.5
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -7281,6 +7277,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
   /jest-preset-angular/7.1.1_6928ced17184753e8ae7f302833d0202:
@@ -12339,7 +12338,7 @@ specifiers:
   '@nrwl/node': 8.9.0
   '@nrwl/workspace': 8.9.0
   '@types/express': ^4.17.1
-  '@types/jest': 24.0.25
+  '@types/jest': 24.9.1
   '@types/nanoid': ^2.1.0
   '@types/node': ^13.1.1
   '@types/supertest': ^2.0.8
