@@ -43,7 +43,7 @@ devDependencies:
   '@types/nanoid': 2.1.0
   '@types/node': 13.5.0
   '@types/supertest': 2.0.8
-  '@types/ws': 6.0.4
+  '@types/ws': 7.2.0
   '@typescript-eslint/eslint-plugin': 2.17.0_0510e20dde42c0bd992b1fc3f26f9a09
   '@typescript-eslint/eslint-plugin-tslint': 2.17.0_5042325a52cae03e07d01beb9ed10fd3
   '@typescript-eslint/parser': 2.17.0_eslint@6.8.0+typescript@3.6.5
@@ -2519,6 +2519,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Onhn+z72D2O2Pb2ql2xukJ55rglumsVo1H6Fmyi8mlU9SvKdBk/pUSUAiBY/d9bAOF7VVWajX3sths/+g6ZiAQ==
+  /@types/node/13.5.1:
+    dev: true
+    resolution:
+      integrity: sha512-Jj2W7VWQ2uM83f8Ls5ON9adxN98MvyJsMSASYFuSvrov8RMRY64Ayay7KV35ph1TSGIJ2gG9ZVDdEq3c3zaydA==
   /@types/q/1.5.2:
     dev: true
     resolution:
@@ -2588,12 +2592,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-dH+BZ6pHBZFrXpnif0YU/PbmUq3lQrvRPnqkxsciSIzvG/DE+Vm/Wrjn56T7V3+B5ryQa5fw0oGnHL8tk4ll6w==
-  /@types/ws/6.0.4:
+  /@types/ws/7.2.0:
     dependencies:
-      '@types/node': 13.5.0
+      '@types/node': 13.5.1
     dev: true
     resolution:
-      integrity: sha512-PpPrX7SZW9re6+Ha8ojZG4Se8AZXgf0GK6zmfqEuCsY49LFDNXO3SByp44X3dFEqtB73lkCDAdUazhAjVPiNwg==
+      integrity: sha512-HnqczxiZ828df9FUh9OyY7vSOelpQNaj+SLEnDvU74rYijp61ggV7dhmDlMky0oYXKLdVuIG4KvExk8DEqzJgQ==
   /@types/yargs-parser/15.0.0:
     dev: true
     resolution:
@@ -12368,7 +12372,7 @@ specifiers:
   '@types/nanoid': ^2.1.0
   '@types/node': ^13.1.1
   '@types/supertest': ^2.0.8
-  '@types/ws': ^6.0.4
+  '@types/ws': ^7.0.0
   '@typescript-eslint/eslint-plugin': ^2.11.0
   '@typescript-eslint/eslint-plugin-tslint': ^2.11.0
   '@typescript-eslint/parser': ^2.11.0
