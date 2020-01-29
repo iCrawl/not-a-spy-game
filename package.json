@@ -112,5 +112,8 @@
 			"no-useless-constructor": 0,
 			"no-case-declarations": 0
 		}
+	},
+	"renovate": {
+		"extends": ["teal"]
 	}
 }
