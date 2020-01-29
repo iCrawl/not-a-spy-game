@@ -48,7 +48,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin-tslint': 2.17.0_5042325a52cae03e07d01beb9ed10fd3
   '@typescript-eslint/parser': 2.17.0_eslint@6.8.0+typescript@3.6.5
   codelyzer: 5.2.1_68dd2e7b03f3aed6e4880eb425eddd5f
-  cypress: 3.8.1
+  cypress: 3.8.3
   dotenv: 8.2.0
   eslint: 6.8.0
   eslint-config-marine: 5.3.2_039e870a8cd2f2225cb9ca9bacdbd7e2
@@ -156,7 +156,6 @@ packages:
       yarn: '>= 1.13.0'
     peerDependencies:
       '@angular/compiler-cli': '>=9.0.0-beta < 10'
-      '@angular/localize': '*'
       typescript: '>=3.6 < 3.8'
     peerDependenciesMeta:
       '@angular/localize':
@@ -2630,7 +2629,6 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.0.0
       tsutils: 3.17.1_typescript@3.6.5
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2664,7 +2662,6 @@ packages:
       '@typescript-eslint/typescript-estree': 2.17.0_typescript@3.6.5
       eslint: 6.8.0
       eslint-visitor-keys: 1.1.0
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2685,7 +2682,6 @@ packages:
       lodash: 4.17.15
       semver: 6.3.0
       tsutils: 3.17.1_typescript@3.6.5
-      typescript: 3.6.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -4618,7 +4614,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
-  /cypress/3.8.1:
+  /cypress/3.8.3:
     dependencies:
       '@cypress/listr-verbose-renderer': 0.4.1
       '@cypress/xvfb': 1.2.4
@@ -4631,6 +4627,7 @@ packages:
       commander: 2.15.1
       common-tags: 1.8.0
       debug: 3.2.6
+      eventemitter2: 4.1.2
       execa: 0.10.0
       executable: 4.1.1
       extract-zip: 1.6.7
@@ -4658,7 +4655,7 @@ packages:
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-eLk5OpL/ZMDfQx9t7ZaDUAGVcvSOPTi7CG1tiUnu9BGk7caBiDhuFi3Tz/D5vWqH/Dl6Uh4X+Au4W+zh0xzbXw==
+      integrity: sha512-I9L/d+ilTPPA4vq3NC1OPKmw7jJIpMKNdyfR8t1EXYzYCjyqbc59migOm1YSse/VRbISLJ+QGb5k4Y3bz2lkYw==
   /d/1.0.1:
     dependencies:
       es5-ext: 0.10.53
@@ -5345,6 +5342,10 @@ packages:
       es5-ext: 0.10.53
     resolution:
       integrity: sha1-34xp7vFkeSPHFXuc6DhAYQsCzDk=
+  /eventemitter2/4.1.2:
+    dev: true
+    resolution:
+      integrity: sha1-DhqEd6+CGm7zmVsxG/dMI6UkfxU=
   /eventemitter3/4.0.0:
     dev: true
     resolution:
@@ -7281,6 +7282,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
   /jest-preset-angular/7.1.1_6928ced17184753e8ae7f302833d0202:
@@ -12348,7 +12352,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin-tslint': ^2.11.0
   '@typescript-eslint/parser': ^2.11.0
   codelyzer: ^5.1.2
-  cypress: 3.8.1
+  cypress: 3.8.3
   dotenv: 8.2.0
   eslint: ^6.7.2
   eslint-config-marine: ^5.3.2
