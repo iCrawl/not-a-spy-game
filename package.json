@@ -91,7 +91,7 @@
 		"jest-marbles": "^2.5.0",
 		"jest-preset-angular": "7.1.1",
 		"prettier": "^1.19.1",
-		"ts-jest": "25.1.0",
+		"ts-jest": "25.2.0",
 		"ts-node": "~8.6.0",
 		"tslint": "~5.20.1",
 		"typescript": "~3.6.4"
