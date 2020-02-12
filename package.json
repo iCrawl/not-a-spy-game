@@ -8,6 +8,7 @@
 		"nest": "nest",
 		"start": "ng serve",
 		"build": "ng build",
+		"build:prod": "ng build --prod",
 		"test": "ng test",
 		"lint": "nx workspace-lint && eslint apps/codenames/**/*.ts --ext .ts",
 		"lint:fix": "nx workspace-lint && eslint apps/codenames/**/*.ts --ext .ts --fix",
@@ -31,16 +32,16 @@
 	},
 	"private": true,
 	"dependencies": {
-		"@angular/animations": "~9.0.0-rc.6",
-		"@angular/cdk": "~9.0.0-rc.5",
-		"@angular/common": "~9.0.0-rc.6",
-		"@angular/compiler": "~9.0.0-rc.6",
-		"@angular/core": "~9.0.0-rc.6",
-		"@angular/forms": "~9.0.0-rc.6",
-		"@angular/material": "~9.0.0-rc.5",
-		"@angular/platform-browser": "~9.0.0-rc.6",
-		"@angular/platform-browser-dynamic": "~9.0.0-rc.6",
-		"@angular/router": "~9.0.0-rc.6",
+		"@angular/animations": "~9.0.0",
+		"@angular/cdk": "~9.0.0",
+		"@angular/common": "~9.0.0",
+		"@angular/compiler": "~9.0.0",
+		"@angular/core": "~9.0.0",
+		"@angular/forms": "~9.0.0",
+		"@angular/material": "~9.0.0",
+		"@angular/platform-browser": "~9.0.0",
+		"@angular/platform-browser-dynamic": "~9.0.0",
+		"@angular/router": "~9.0.0",
 		"@nestjs/common": "^6.10.13",
 		"@nestjs/core": "^6.10.13",
 		"@nestjs/platform-express": "^6.10.13",
@@ -59,9 +60,9 @@
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.900.0-rc.6",
-		"@angular/cli": "~9.0.0-rc.6",
-		"@angular/compiler-cli": "~9.0.0-rc.6",
-		"@angular/language-service": "~9.0.0-rc.6",
+		"@angular/cli": "~9.0.1",
+		"@angular/compiler-cli": "~9.0.0",
+		"@angular/language-service": "~9.0.0",
 		"@nestjs/cli": "^6.9.0",
 		"@nestjs/schematics": "^6.7.0",
 		"@nestjs/testing": "^6.10.13",
@@ -114,6 +115,8 @@
 		}
 	},
 	"renovate": {
-		"extends": ["teal"]
+		"extends": [
+			"teal"
+		]
 	}
 }
