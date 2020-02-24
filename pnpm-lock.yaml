@@ -1,11 +1,11 @@
 dependencies:
   '@angular/animations': 9.0.0_@angular+core@9.0.0+tslib@1.10.0
-  '@angular/cdk': 9.0.0_44713ce0c8562749b018dfb5227fc646
+  '@angular/cdk': 9.1.0_44713ce0c8562749b018dfb5227fc646
   '@angular/common': 9.0.0_04eefd85a057a6849194173c5538aaa3
   '@angular/compiler': 9.0.0_tslib@1.10.0
   '@angular/core': 9.0.0_c038ab33ac04696611c08ea0c4c8a24f
   '@angular/forms': 9.0.0_f68cef44d45a1a444ba70727e807743c
-  '@angular/material': 9.0.0_3e71d89f51ed7cb5354c5f3e84bdad22
+  '@angular/material': 9.1.0_f52955084313bb796527cfa62cb99357
   '@angular/platform-browser': 9.0.0_44713ce0c8562749b018dfb5227fc646
   '@angular/platform-browser-dynamic': 9.0.0_69a812c22ae122247455e6ca4a8d523f
   '@angular/router': 9.0.0_f68cef44d45a1a444ba70727e807743c
@@ -348,7 +348,7 @@ packages:
       tslib: ^1.10.0
     resolution:
       integrity: sha512-jB8+SC3vMztW5zt5UYVmtVwqIWE33UyEjbP5JPba3I3bLRK5E059LcJmN1rSdJHItgIAdG9Y1I0WJ6aiSFyp4Q==
-  /@angular/cdk/9.0.0_44713ce0c8562749b018dfb5227fc646:
+  /@angular/cdk/9.1.0_44713ce0c8562749b018dfb5227fc646:
     dependencies:
       '@angular/common': 9.0.0_04eefd85a057a6849194173c5538aaa3
       '@angular/core': 9.0.0_c038ab33ac04696611c08ea0c4c8a24f
@@ -361,7 +361,7 @@ packages:
       '@angular/core': ^9.0.0 || ^10.0.0-0
       tslib: ^1.9.0
     resolution:
-      integrity: sha512-2kYpyYbewIB6fubSIDMvSprJLNplRZoL/AtXW3od4dLyRxtzX+7iWTAtzUG/dhq8CKev0lpd1HENh5lLR/Lhjw==
+      integrity: sha512-qKpAudJx9z0MD+ADptS0OZViJBTA49+JCKym0hPQUkcB9Po4Al6gu6oZ1VSXV5Ln3T84z9aAw/AhUGP/YCFNSQ==
   /@angular/cli/9.0.1:
     dependencies:
       '@angular-devkit/architect': 0.900.1
@@ -468,10 +468,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tOMtXY8DFpTWMF77BOTXZmMMtqvdy6fbyOkJSccn6VatcPrNXOs5rKur+KNwdSlK+djjss6Y+LA8fQAvjNvUqw==
-  /@angular/material/9.0.0_3e71d89f51ed7cb5354c5f3e84bdad22:
+  /@angular/material/9.1.0_f52955084313bb796527cfa62cb99357:
     dependencies:
       '@angular/animations': 9.0.0_@angular+core@9.0.0+tslib@1.10.0
-      '@angular/cdk': 9.0.0_44713ce0c8562749b018dfb5227fc646
+      '@angular/cdk': 9.1.0_44713ce0c8562749b018dfb5227fc646
       '@angular/common': 9.0.0_04eefd85a057a6849194173c5538aaa3
       '@angular/core': 9.0.0_c038ab33ac04696611c08ea0c4c8a24f
       '@angular/forms': 9.0.0_f68cef44d45a1a444ba70727e807743c
@@ -479,13 +479,13 @@ packages:
     dev: false
     peerDependencies:
       '@angular/animations': ^9.0.0 || ^10.0.0-0
-      '@angular/cdk': 9.0.0
+      '@angular/cdk': 9.1.0
       '@angular/common': ^9.0.0 || ^10.0.0-0
       '@angular/core': ^9.0.0 || ^10.0.0-0
       '@angular/forms': ^9.0.0 || ^10.0.0-0
       tslib: ^1.9.0
     resolution:
-      integrity: sha512-QxN2rmR5mvg2YE1NoIGWLpbnmcJq0iFidzy6odzvN17+XkoCJBZ65IdYsHrJgfwGpoIy6bywuixrDHHcSh9I5w==
+      integrity: sha512-KjA1ARoZ1vBg4jUH1y39muynxAFvkD8QZFGKH8Nh4zXW5pOP/7NyjokxXsNx5qSBCq/6ac2xBxCrCYJN7HmoDw==
   /@angular/platform-browser-dynamic/9.0.0_69a812c22ae122247455e6ca4a8d523f:
     dependencies:
       '@angular/common': 9.0.0_04eefd85a057a6849194173c5538aaa3
@@ -12699,7 +12699,7 @@ packages:
 specifiers:
   '@angular-devkit/build-angular': ~0.900.0-rc.6
   '@angular/animations': ~9.0.0
-  '@angular/cdk': ~9.0.0
+  '@angular/cdk': ~9.1.0
   '@angular/cli': ~9.0.1
   '@angular/common': ~9.0.0
   '@angular/compiler': ~9.0.0
@@ -12707,7 +12707,7 @@ specifiers:
   '@angular/core': ~9.0.0
   '@angular/forms': ~9.0.0
   '@angular/language-service': ~9.0.0
-  '@angular/material': ~9.0.0
+  '@angular/material': ~9.1.0
   '@angular/platform-browser': ~9.0.0
   '@angular/platform-browser-dynamic': ~9.0.0
   '@angular/router': ~9.0.0
