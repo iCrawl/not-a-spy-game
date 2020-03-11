@@ -14,10 +14,10 @@ dependencies:
   '@nestjs/platform-express': 6.11.1_d8dc6f4dbd9084cc5624b7fc0e32cd45
   '@nestjs/platform-ws': 6.11.1_32d6f0597e87a5da538f931db1375ff6
   '@nestjs/websockets': 6.11.1_0899301a2ee3abc47792e12bb37fdccf
-  '@ngrx/effects': 8.6.0_cfa3c0c8477a3f4b1023c84f7360708e
-  '@ngrx/entity': 8.6.0_cfa3c0c8477a3f4b1023c84f7360708e
-  '@ngrx/store': 8.6.0_@angular+core@9.0.0+rxjs@6.5.4
-  '@ngrx/store-devtools': 8.6.0_@ngrx+store@8.6.0+rxjs@6.5.4
+  '@ngrx/effects': 9.0.0_cb7e9f5baf89c12cd1b1d41223027330
+  '@ngrx/entity': 9.0.0_cb7e9f5baf89c12cd1b1d41223027330
+  '@ngrx/store': 9.0.0_@angular+core@9.0.0+rxjs@6.5.4
+  '@ngrx/store-devtools': 9.0.0_@ngrx+store@9.0.0+rxjs@6.5.4
   '@nrwl/angular': 9.1.0_ea0d0a545148fdfdd8a2b06707010ee5
   nanoid: 2.1.10
   reflect-metadata: 0.1.13
@@ -32,7 +32,7 @@ devDependencies:
   '@nestjs/cli': 6.14.1
   '@nestjs/schematics': 6.8.2_typescript@3.7.5
   '@nestjs/testing': 6.11.1_d8dc6f4dbd9084cc5624b7fc0e32cd45
-  '@ngrx/schematics': 8.6.0
+  '@ngrx/schematics': 9.0.0
   '@nrwl/cypress': 9.1.0_85639089f74e5513ad96d7d7da34d532
   '@nrwl/jest': 9.1.0_@nrwl+workspace@9.1.0
   '@nrwl/nest': 9.1.0_f2f72892d981587601c25fc8ac1253c0
@@ -2326,54 +2326,54 @@ packages:
       rxjs: ^6.0.0
     resolution:
       integrity: sha512-Fj1MN36LBSvVEYtc6i7SAa75K4o5s08TcQ5UPUhjRqRSak8nCU1/wpwSFkI5bIYA8tzPnyjnONkugdK/Zu0vzg==
-  /@ngrx/effects/8.6.0_cfa3c0c8477a3f4b1023c84f7360708e:
+  /@ngrx/effects/9.0.0_cb7e9f5baf89c12cd1b1d41223027330:
     dependencies:
       '@angular/core': 9.0.0_402c3ec397760a3668714dc12cc53502
-      '@ngrx/store': 8.6.0_@angular+core@9.0.0+rxjs@6.5.4
+      '@ngrx/store': 9.0.0_@angular+core@9.0.0+rxjs@6.5.4
       rxjs: 6.5.4
     dev: false
     peerDependencies:
-      '@angular/core': ^8.0.0
-      '@ngrx/store': 8.6.0
-      rxjs: ^6.4.0
+      '@angular/core': ^9.0.0
+      '@ngrx/store': 9.0.0
+      rxjs: ^6.5.3
     resolution:
-      integrity: sha512-JdyJLQbv/wnE0ZPY9DcDOtF9PzJuzsKWmIWgIGunHF18wdjk5O8Zpkcrxq18wDRL6geg5UTtNJRMvTQhpDbzow==
-  /@ngrx/entity/8.6.0_cfa3c0c8477a3f4b1023c84f7360708e:
+      integrity: sha512-6Rq7FsNZK26HqYlpOGCglKLenIkVOOKE0y6D/8KXjEJ1JlZWi00fdI7poclBGjm9pvMBGXfJA8a9MKuxb/t9cA==
+  /@ngrx/entity/9.0.0_cb7e9f5baf89c12cd1b1d41223027330:
     dependencies:
       '@angular/core': 9.0.0_402c3ec397760a3668714dc12cc53502
-      '@ngrx/store': 8.6.0_@angular+core@9.0.0+rxjs@6.5.4
+      '@ngrx/store': 9.0.0_@angular+core@9.0.0+rxjs@6.5.4
       rxjs: 6.5.4
     dev: false
     peerDependencies:
-      '@angular/core': ^8.0.0
-      '@ngrx/store': 8.6.0
-      rxjs: ^6.4.0
+      '@angular/core': ^9.0.0
+      '@ngrx/store': 9.0.0
+      rxjs: ^6.5.3
     resolution:
-      integrity: sha512-Qq+ANgsHd2/i7gam1j05hxA8kPWQyf5ewtCLlbtMJI/qLmvA6ruSE8PYNNwrt90wm4BWdks2zKE5ERzvPzto0w==
-  /@ngrx/schematics/8.6.0:
+      integrity: sha512-0NQ+ppwiLuXtRZ2t79qdudbJhGlmuX2Qh6ORF9hplQoQn8Nl3BUp/TrH8SaAwISbg/B4EOhLWFmLVkXN8HZL8w==
+  /@ngrx/schematics/9.0.0:
     dev: true
     resolution:
-      integrity: sha512-d28FVsLWFJYxpMFnqzWvdbFSSPNlLUIezd0c4zlyf4CyNS/C8aw6Lio9xjOJHhgZuHvFuO9GwRrYV/GaS6wC7A==
-  /@ngrx/store-devtools/8.6.0_@ngrx+store@8.6.0+rxjs@6.5.4:
+      integrity: sha512-lnACu54m0814fhXOW88cMXnh9igM6D9gAZ8M+1FYiAfylPv8kX5E4aV0x+stlcIrC9h9fEB+EXR+f6RWI4XOvA==
+  /@ngrx/store-devtools/9.0.0_@ngrx+store@9.0.0+rxjs@6.5.4:
     dependencies:
-      '@ngrx/store': 8.6.0_@angular+core@9.0.0+rxjs@6.5.4
+      '@ngrx/store': 9.0.0_@angular+core@9.0.0+rxjs@6.5.4
       rxjs: 6.5.4
     dev: false
     peerDependencies:
-      '@ngrx/store': 8.6.0
-      rxjs: ^6.4.0
+      '@ngrx/store': 9.0.0
+      rxjs: ^6.5.3
     resolution:
-      integrity: sha512-PWZmiOZE0J56GFfZpuzKLb7w0K2c6OXZSp/eWDeAvtdHFD4/Nas1i4TXtiWWMWWnSZeNs0hNIg4nFJXi2EddJQ==
-  /@ngrx/store/8.6.0_@angular+core@9.0.0+rxjs@6.5.4:
+      integrity: sha512-Vj8sj8GclbSbnYCS8eqZXTOYDdip1nnjKhkYClUg2oFPh67haaCmvh7TXITnX8PpgDtj5akF84Xw9/1HRiG8mg==
+  /@ngrx/store/9.0.0_@angular+core@9.0.0+rxjs@6.5.4:
     dependencies:
       '@angular/core': 9.0.0_402c3ec397760a3668714dc12cc53502
       rxjs: 6.5.4
     dev: false
     peerDependencies:
-      '@angular/core': ^8.0.0
-      rxjs: ^6.4.0
+      '@angular/core': ^9.0.0
+      rxjs: ^6.5.3
     resolution:
-      integrity: sha512-K4cvCEa+5hw9qrETQWO+Cha3YbVCAT8yaIKJr/N35KntTL9mQMjoL+51JWLZfBwPV0e19CFgJIyrBnVUTxwr2A==
+      integrity: sha512-QnmfXJ4G2jp+vFaqT5Qfp6h0J9OHxfDKI2RbnMU93Tq1Xd/WVPzXnOQGjILBjwwWI6RFkSdIpUoQONr7VOW63g==
   /@ngtools/webpack/9.0.0-rc.10_5afc137c01661c31ae7851560082853e:
     dependencies:
       '@angular-devkit/core': 9.0.0-rc.10
@@ -12585,11 +12585,11 @@ specifiers:
   '@nestjs/schematics': ^6.7.0
   '@nestjs/testing': ^6.10.13
   '@nestjs/websockets': ^6.10.13
-  '@ngrx/effects': ^8.6.0
-  '@ngrx/entity': ^8.6.0
-  '@ngrx/schematics': ^8.6.0
-  '@ngrx/store': ^8.6.0
-  '@ngrx/store-devtools': ^8.6.0
+  '@ngrx/effects': ^9.0.0
+  '@ngrx/entity': ^9.0.0
+  '@ngrx/schematics': ^9.0.0
+  '@ngrx/store': ^9.0.0
+  '@ngrx/store-devtools': ^9.0.0
   '@nrwl/angular': 9.1.0
   '@nrwl/cypress': 9.1.0
   '@nrwl/jest': 9.1.0
