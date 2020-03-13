@@ -18,7 +18,7 @@ dependencies:
   '@ngrx/entity': 9.0.0_cb7e9f5baf89c12cd1b1d41223027330
   '@ngrx/store': 9.0.0_@angular+core@9.0.0+rxjs@6.5.4
   '@ngrx/store-devtools': 9.0.0_@ngrx+store@9.0.0+rxjs@6.5.4
-  '@nrwl/angular': 9.1.2_c5b3e06baf0263149a2a6490a6d4c6bb
+  '@nrwl/angular': 9.1.2_286e0a30ec61aab7f484e98f891e0b43
   nanoid: 2.1.10
   reflect-metadata: 0.1.13
   rxjs: 6.5.4
@@ -33,11 +33,11 @@ devDependencies:
   '@nestjs/schematics': 7.0.0_typescript@3.7.5
   '@nestjs/testing': 7.0.0_59ecdc2ae1cb627d257b1c373f982e64
   '@ngrx/schematics': 9.0.0
-  '@nrwl/cypress': 9.1.2_60b5881e9664bab923672a345f939fae
-  '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.1
-  '@nrwl/nest': 9.1.2_97f53b7322c9bc83516a5ebd2010b738
-  '@nrwl/node': 9.1.2_97f53b7322c9bc83516a5ebd2010b738
-  '@nrwl/workspace': 9.1.1_prettier@1.19.1
+  '@nrwl/cypress': 9.1.2_4ba954e9764cb01f9c91fddf331078dd
+  '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
+  '@nrwl/nest': 9.1.2_8b01c8996317b330633436882b5bd095
+  '@nrwl/node': 9.1.2_8b01c8996317b330633436882b5bd095
+  '@nrwl/workspace': 9.1.2_prettier@1.19.1
   '@types/express': 4.17.2
   '@types/jest': 25.1.4
   '@types/nanoid': 2.1.0
@@ -2400,12 +2400,12 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-eOD0/GlhfO+W076H+fSmW8h58lOtzS7JL62CviKm8ttEkrvsTlOhXIjpNUDW69WJilfsNJjXzmB3QV9DeilgNQ==
-  /@nrwl/angular/9.1.2_c5b3e06baf0263149a2a6490a6d4c6bb:
+  /@nrwl/angular/9.1.2_286e0a30ec61aab7f484e98f891e0b43:
     dependencies:
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/cypress': 9.1.2_60b5881e9664bab923672a345f939fae
-      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.1
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/cypress': 9.1.2_4ba954e9764cb01f9c91fddf331078dd
+      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
       '@schematics/angular': 9.0.6
       jasmine-marbles: 0.6.0_rxjs@6.5.4
     dev: false
@@ -2417,22 +2417,22 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-oXfUaaTik+KIoppiIsdrYKszgnOCH8fVjIU6QPAbmKfG+W4Ic1j3LjgI6B+SJ5kCA9eLqX19dxJcMlLj/iz3EA==
-  /@nrwl/cli/9.1.1:
+  /@nrwl/cli/9.1.2:
     dependencies:
-      '@nrwl/tao': 9.1.1
+      '@nrwl/tao': 9.1.2
       chalk: 2.4.2
       tmp: 0.0.33
       yargs: 11.1.1
       yargs-parser: 10.0.0
     hasBin: true
     resolution:
-      integrity: sha512-P21lGU0Yh1l7LiMQA3ViqhbgCIcQy7pE56TpRIhBNBYMe2SZsYVRykwOI0+/DCz87ZU4+LimLU/o+qvFRw3pFA==
-  /@nrwl/cypress/9.1.2_60b5881e9664bab923672a345f939fae:
+      integrity: sha512-DBRHQz2PcGc0nVL8r4dF0sOb9nMHWeB+5d95yMV5dt8c4h7s55VFIW2LI6IDsl4ImM90mr2ci5jCwLbE/Paj/A==
+  /@nrwl/cypress/9.1.2_4ba954e9764cb01f9c91fddf331078dd:
     dependencies:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/core': 9.0.6
       '@cypress/webpack-preprocessor': 4.1.3
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
       cypress: 4.1.0
       fork-ts-checker-webpack-plugin: 3.1.1
       tree-kill: 1.2.2
@@ -2445,46 +2445,46 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-zCUWNi86KbPc9lvhC6wzmkIkL8ppwGKVOQhiEtRdm9+Z/+ZS4iwHXKBXZ1uWUgx9jMAmzvHcPpjmdwDcFIPv8Q==
-  /@nrwl/jest/9.1.2_@nrwl+workspace@9.1.1:
+  /@nrwl/jest/9.1.2_@nrwl+workspace@9.1.2:
     dependencies:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
     peerDependencies:
       '@nrwl/workspace': 9.1.2
     resolution:
       integrity: sha512-b/swIZax0YJXw1ChM0D+0FvetuVnc8O8yjwNQ6Sq4lGnXMBxL1i0kXJWq7u3XQn75tuma/nUl66h2xIlhbJvWw==
-  /@nrwl/linter/9.1.2_@nrwl+workspace@9.1.1:
+  /@nrwl/linter/9.1.2_@nrwl+workspace@9.1.2:
     dependencies:
       '@angular-devkit/architect': 0.900.6
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
     dev: true
     peerDependencies:
       '@nrwl/workspace': 9.1.2
     resolution:
       integrity: sha512-Bm56lG72NSPT6c4AwaosEjoWWiAJ83MMrsPpEvE6JG5up7aV4zT+OgVS86iQLQohm2x/D6eez8RR1go8HBYONA==
-  /@nrwl/nest/9.1.2_97f53b7322c9bc83516a5ebd2010b738:
+  /@nrwl/nest/9.1.2_8b01c8996317b330633436882b5bd095:
     dependencies:
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.1
-      '@nrwl/node': 9.1.2_97f53b7322c9bc83516a5ebd2010b738
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
+      '@nrwl/node': 9.1.2_8b01c8996317b330633436882b5bd095
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
     dev: true
     peerDependencies:
       '@nrwl/workspace': 9.1.2
       typescript: '*'
     resolution:
       integrity: sha512-wsKfD4gnPu/w3+8NFEnJRBEyMDpudFyvSDal4EBSFifHbNvVwx6Z45bpAA643eEVeSh05WWeWKTicZRPA3PMJA==
-  /@nrwl/node/9.1.2_97f53b7322c9bc83516a5ebd2010b738:
+  /@nrwl/node/9.1.2_8b01c8996317b330633436882b5bd095:
     dependencies:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/build-webpack': 0.900.6_460d0864b08b9d9a454c10b471e3fc5a
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.1
-      '@nrwl/linter': 9.1.2_@nrwl+workspace@9.1.1
-      '@nrwl/workspace': 9.1.1_prettier@1.19.1
+      '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
+      '@nrwl/linter': 9.1.2_@nrwl+workspace@9.1.2
+      '@nrwl/workspace': 9.1.2_prettier@1.19.1
       circular-dependency-plugin: 5.2.0_webpack@4.41.2
       copy-webpack-plugin: 5.1.1_webpack@4.41.2
       fork-ts-checker-webpack-plugin: 3.1.1
@@ -2504,23 +2504,23 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-fAAof7dYXzjIrWYE08wK2OPN3fvNJstaMOYtnXlqTO5PWqq5m39eyk/9+jBstQ0q1cM6n7LuaMwkZhVdrytL2A==
-  /@nrwl/tao/9.1.1:
+  /@nrwl/tao/9.1.2:
     dependencies:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
       fast-levenshtein: 2.0.6
       inquirer: 6.5.2
-      minimist: 1.2.4
+      minimist: 1.2.5
       strip-json-comments: 2.0.1
     hasBin: true
     resolution:
-      integrity: sha512-wbdVzWCCQkHVYgoXYVweLNli1PnbTcoAJccYcYlTgOXF8KlxASXl9j/uMlqtQrnGM+7Pv72HCC2LvOHUx8XYWg==
-  /@nrwl/workspace/9.1.1_prettier@1.19.1:
+      integrity: sha512-mhzjocwLjVfTBCiIMQerdQCCdUP5FtWlGkX+XQ1H8Cn9a3OFXd/aHcE98sIFx7ghSArp5ZcuCWdFMmHO9vnsnQ==
+  /@nrwl/workspace/9.1.2_prettier@1.19.1:
     dependencies:
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/cli': 9.1.1
+      '@nrwl/cli': 9.1.2
       axios: 0.19.2
       chalk: 2.4.2
       cosmiconfig: 4.0.0
@@ -2539,7 +2539,7 @@ packages:
     peerDependencies:
       prettier: ^1.19.1
     resolution:
-      integrity: sha512-kzcClDsmvB5pYEf/V7BEuSlYMJYL6iQGB/rQbiYH6FIfTiTw/r5PDX17yKf2Er+Ept7PXtgHTFbxRBQl0bxQBw==
+      integrity: sha512-H9xxx6nwkB1+ZCImjpQhiaO3BQOgqcxTCqM3rYgbQyn0QVWkJtEgzOvnMg87Mev0gC4X2Io4pdJcSfXx5VKahg==
   /@nuxtjs/opencollective/0.2.2:
     dependencies:
       chalk: 2.4.2
@@ -8349,9 +8349,9 @@ packages:
   /minimist/1.2.0:
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
-  /minimist/1.2.4:
+  /minimist/1.2.5:
     resolution:
-      integrity: sha512-wTiNDqe4D2rbTJGZk1qcdZgFtY0/r+iuE6GDT7V0/+Gu5MLpIDm4+CssDECR79OJs/OxLPXMzdxy153b5Qy3hg==
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /minipass-collect/1.0.2:
     dependencies:
       minipass: 3.1.1
@@ -12619,7 +12619,7 @@ specifiers:
   '@nrwl/jest': 9.1.2
   '@nrwl/nest': 9.1.2
   '@nrwl/node': 9.1.2
-  '@nrwl/workspace': 9.1.1
+  '@nrwl/workspace': 9.1.2
   '@types/express': ^4.17.1
   '@types/jest': 25.1.4
   '@types/nanoid': ^2.1.0
