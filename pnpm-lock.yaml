@@ -30,7 +30,7 @@ devDependencies:
   '@angular/compiler-cli': 9.0.0_27c789cee8e8eb136d95b9bb9e65f00f
   '@angular/language-service': 9.0.0
   '@nestjs/cli': 7.0.0
-  '@nestjs/schematics': 6.8.2_typescript@3.7.5
+  '@nestjs/schematics': 7.0.0_typescript@3.7.5
   '@nestjs/testing': 7.0.0_59ecdc2ae1cb627d257b1c373f982e64
   '@ngrx/schematics': 9.0.0
   '@nrwl/cypress': 9.1.2_60b5881e9664bab923672a345f939fae
@@ -223,19 +223,6 @@ packages:
       webpack-dev-server: ^3.1.4
     resolution:
       integrity: sha512-45YiOhR425599Ln4xLr8F+T0QJUEo8TeJMnq30J+2hux+XdklN2P4+0Ju0902IL0r4xD57Hibmi+fQEbDDe5sQ==
-  /@angular-devkit/core/7.3.8:
-    dependencies:
-      ajv: 6.9.1
-      chokidar: 2.0.4
-      fast-json-stable-stringify: 2.0.0
-      rxjs: 6.3.3
-      source-map: 0.7.3
-    dev: true
-    engines:
-      node: '>= 8.9.0'
-      npm: '>= 5.5.1'
-    resolution:
-      integrity: sha512-3X9uzaZXFpm5o2TSzhD6wEOtVU32CgeytKjD1Scxj+uMMVo48SWLlKiFh312T+smI9ko7tOT8VqxglwYkWosgg==
   /@angular-devkit/core/9.0.0-rc.10:
     dependencies:
       ajv: 6.10.2
@@ -294,16 +281,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-TH8uPGK0sL2UACnYXnpnXLvH8rThDxfWCJrPQAWbFtE9R6vpb5n1jGqVt0DEacI1fcvOd2ANHiBGHDMShOHv1g==
-  /@angular-devkit/schematics/7.3.8:
-    dependencies:
-      '@angular-devkit/core': 7.3.8
-      rxjs: 6.3.3
-    dev: true
-    engines:
-      node: '>= 8.9.0'
-      npm: '>= 5.5.1'
-    resolution:
-      integrity: sha512-mvaKoORZIaW/h0VNZ3IQWP0qThRCZRX6869FNlzV0jlW0mhn07XbiIGHCGGSCDRxS7qJ0VbuIVnKXntF+iDeWw==
   /@angular-devkit/schematics/9.0.1:
     dependencies:
       '@angular-devkit/core': 9.0.1
@@ -2318,17 +2295,6 @@ packages:
       rxjs: ^6.0.0
     resolution:
       integrity: sha512-ytpp4YdumNa+SBnhsDSweSNya7XOlg8KjM8JLXzhX6eM/dKY5wLI5MUJhQ8+anK9ggrSfr2H+YpVYFakoJbQkA==
-  /@nestjs/schematics/6.8.2_typescript@3.7.5:
-    dependencies:
-      '@angular-devkit/core': 7.3.8
-      '@angular-devkit/schematics': 7.3.8
-      fs-extra: 8.1.0
-      typescript: 3.7.5
-    dev: true
-    peerDependencies:
-      typescript: ^3.4.5
-    resolution:
-      integrity: sha512-NWfsDj8dBD9MjJtnusMpRTrXGwIaSYvOCzeV8iwLimQNfGEHQCRvmW/XVc95eLewCfA5Q2SkbbIE00Iea4dg5Q==
   /@nestjs/schematics/7.0.0_typescript@3.7.5:
     dependencies:
       '@angular-devkit/core': 9.0.6
@@ -3265,15 +3231,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-D6gFiFA0RRLyUbvijN74DWAjXSFxWKaWP7mldxkVhyhAV3+SWA9HEJPHQ2c9soIeTFJqcSdFDGFgdqs1iUU2Hw==
-  /ajv/6.9.1:
-    dependencies:
-      fast-deep-equal: 2.0.1
-      fast-json-stable-stringify: 2.0.0
-      json-schema-traverse: 0.4.1
-      uri-js: 4.2.2
-    dev: true
-    resolution:
-      integrity: sha512-XDN92U311aINL77ieWHmqCcNlwjoP5cHXDxIxbf2MaPYuCXOHS7gHH8jktxeK5omgd52XbSTX6a4Piwd1pQmzA==
   /alphanum-sort/1.0.2:
     dev: true
     resolution:
@@ -4125,25 +4082,6 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-FCD/sQ/URNz8ebQ4kbv//TKoRgA=
-  /chokidar/2.0.4:
-    dependencies:
-      anymatch: 2.0.0
-      async-each: 1.0.3
-      braces: 2.3.2
-      glob-parent: 3.1.0
-      inherits: 2.0.4
-      is-binary-path: 1.0.1
-      is-glob: 4.0.1
-      lodash.debounce: 4.0.8
-      normalize-path: 2.1.1
-      path-is-absolute: 1.0.1
-      readdirp: 2.2.1
-      upath: 1.2.0
-    dev: true
-    optionalDependencies:
-      fsevents: 1.2.11
-    resolution:
-      integrity: sha512-z9n7yt9rOvIJrMhvDtDictKrkFHeihkNl6uWMmZlmL6tJtX9Cs+87oK+teBx+JIgzvbX3yZHT3eF8vpbDxHJXQ==
   /chokidar/2.1.8:
     dependencies:
       anymatch: 2.0.0
@@ -8072,10 +8010,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
-  /lodash.debounce/4.0.8:
-    dev: true
-    resolution:
-      integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=
   /lodash.memoize/4.1.2:
     dev: true
     resolution:
@@ -10549,14 +10483,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
-  /rxjs/6.3.3:
-    dependencies:
-      tslib: 1.10.0
-    dev: true
-    engines:
-      npm: '>=2.0.0'
-    resolution:
-      integrity: sha512-JTWmoY9tWCs7zvIk/CvRjhjGaOd+OVBM987mxFo+OW66cGpdKjZcpmc74ES1sB//7Kl/PAe8+wEakuhG4pcgOw==
   /rxjs/6.5.3:
     dependencies:
       tslib: 1.10.0
@@ -12680,7 +12606,7 @@ specifiers:
   '@nestjs/core': ^7.0.0
   '@nestjs/platform-express': ^7.0.0
   '@nestjs/platform-ws': ^7.0.0
-  '@nestjs/schematics': ^6.7.0
+  '@nestjs/schematics': ^7.0.0
   '@nestjs/testing': ^7.0.0
   '@nestjs/websockets': ^7.0.0
   '@ngrx/effects': ^9.0.0
