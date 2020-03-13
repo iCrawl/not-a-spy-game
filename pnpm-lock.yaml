@@ -56,7 +56,7 @@ devDependencies:
   eslint-plugin-prettier: 3.1.2_eslint@6.8.0+prettier@1.19.1
   jest: 25.1.0
   jest-marbles: 2.5.1_rxjs@6.5.4
-  jest-preset-angular: 8.1.0_70cdc06a27dd0d5d89b435affd5bbd95
+  jest-preset-angular: 8.1.1_70cdc06a27dd0d5d89b435affd5bbd95
   prettier: 1.19.1
   ts-jest: 25.2.1_jest@25.1.0
   ts-node: 8.6.2_typescript@3.7.5
@@ -7489,7 +7489,7 @@ packages:
         optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
-  /jest-preset-angular/8.1.0_70cdc06a27dd0d5d89b435affd5bbd95:
+  /jest-preset-angular/8.1.1_70cdc06a27dd0d5d89b435affd5bbd95:
     dependencies:
       '@angular/core': 9.0.0_402c3ec397760a3668714dc12cc53502
       '@angular/platform-browser-dynamic': 9.0.0_58712338eb9b18530c76b66b578612a4
@@ -7502,7 +7502,7 @@ packages:
       '@angular/platform-browser-dynamic': '>=2.0.0'
       jest: ^25.0.0
     resolution:
-      integrity: sha512-4C4YYgU+cumgirC4H9JlFmxBy/4Py/IzfcV1T2vJNl4VotlblVS+YunkHXzEihodRRnkrZvfUh0aa2VpIvgfcQ==
+      integrity: sha512-v6V/JMM7maaDtWH/BEZeN4wknWUHIwSO5Rp6U3M3YPM7ZziY2c6VOcazyGTPyIupZfAkd15JGZWpxjUg342c9g==
   /jest-regex-util/25.1.0:
     dev: true
     engines:
@@ -12679,7 +12679,7 @@ specifiers:
   eslint-plugin-prettier: ^3.1.2
   jest: 25.1.0
   jest-marbles: ^2.5.0
-  jest-preset-angular: 8.1.0
+  jest-preset-angular: 8.1.1
   nanoid: ^2.1.8
   prettier: ^1.19.1
   reflect-metadata: ^0.1.13
