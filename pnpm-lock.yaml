@@ -37,7 +37,7 @@ devDependencies:
   '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
   '@nrwl/nest': 9.1.2_8b01c8996317b330633436882b5bd095
   '@nrwl/node': 9.1.2_8b01c8996317b330633436882b5bd095
-  '@nrwl/workspace': 9.1.2_prettier@1.19.1
+  '@nrwl/workspace': 9.1.2_prettier@2.0.0
   '@types/express': 4.17.2
   '@types/jest': 25.1.4
   '@types/nanoid': 2.1.0
@@ -51,13 +51,13 @@ devDependencies:
   cypress: 4.2.0
   dotenv: 8.2.0
   eslint: 6.8.0
-  eslint-config-marine: 6.0.0_039e870a8cd2f2225cb9ca9bacdbd7e2
+  eslint-config-marine: 6.0.0_6f1b618af774024e27876dd9bf4b3e62
   eslint-config-prettier: 6.9.0_eslint@6.8.0
-  eslint-plugin-prettier: 3.1.2_eslint@6.8.0+prettier@1.19.1
+  eslint-plugin-prettier: 3.1.2_eslint@6.8.0+prettier@2.0.0
   jest: 25.1.0
   jest-marbles: 2.5.1_rxjs@6.5.4
   jest-preset-angular: 8.1.2_70cdc06a27dd0d5d89b435affd5bbd95
-  prettier: 1.19.1
+  prettier: 2.0.0
   ts-jest: 25.2.1_jest@25.1.0
   ts-node: 8.7.0_typescript@3.7.5
   tslint: 6.1.0_typescript@3.7.5
@@ -2405,7 +2405,7 @@ packages:
       '@angular-devkit/schematics': 9.0.6
       '@nrwl/cypress': 9.1.2_449d4e2261287274cc346dd3c3e25273
       '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
       '@schematics/angular': 9.0.6
       jasmine-marbles: 0.6.0_rxjs@6.5.4
     dev: false
@@ -2432,7 +2432,7 @@ packages:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/core': 9.0.6
       '@cypress/webpack-preprocessor': 4.1.3
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
       cypress: 4.2.0
       fork-ts-checker-webpack-plugin: 3.1.1
       tree-kill: 1.2.2
@@ -2450,7 +2450,7 @@ packages:
       '@angular-devkit/architect': 0.900.6
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
     peerDependencies:
       '@nrwl/workspace': 9.1.2
     resolution:
@@ -2458,7 +2458,7 @@ packages:
   /@nrwl/linter/9.1.2_@nrwl+workspace@9.1.2:
     dependencies:
       '@angular-devkit/architect': 0.900.6
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
     dev: true
     peerDependencies:
       '@nrwl/workspace': 9.1.2
@@ -2469,7 +2469,7 @@ packages:
       '@angular-devkit/schematics': 9.0.6
       '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
       '@nrwl/node': 9.1.2_8b01c8996317b330633436882b5bd095
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
     dev: true
     peerDependencies:
       '@nrwl/workspace': 9.1.2
@@ -2484,7 +2484,7 @@ packages:
       '@angular-devkit/schematics': 9.0.6
       '@nrwl/jest': 9.1.2_@nrwl+workspace@9.1.2
       '@nrwl/linter': 9.1.2_@nrwl+workspace@9.1.2
-      '@nrwl/workspace': 9.1.2_prettier@1.19.1
+      '@nrwl/workspace': 9.1.2_prettier@2.0.0
       circular-dependency-plugin: 5.2.0_webpack@4.41.2
       copy-webpack-plugin: 5.1.1_webpack@4.41.2
       fork-ts-checker-webpack-plugin: 3.1.1
@@ -2516,7 +2516,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-mhzjocwLjVfTBCiIMQerdQCCdUP5FtWlGkX+XQ1H8Cn9a3OFXd/aHcE98sIFx7ghSArp5ZcuCWdFMmHO9vnsnQ==
-  /@nrwl/workspace/9.1.2_prettier@1.19.1:
+  /@nrwl/workspace/9.1.2_prettier@2.0.0:
     dependencies:
       '@angular-devkit/core': 9.0.6
       '@angular-devkit/schematics': 9.0.6
@@ -2529,7 +2529,7 @@ packages:
       ignore: 5.0.4
       npm-run-all: 4.1.5
       opn: 5.5.0
-      prettier: 1.19.1
+      prettier: 2.0.0
       rxjs: 6.5.4
       semver: 5.4.1
       strip-json-comments: 2.0.1
@@ -5342,12 +5342,12 @@ packages:
       source-map: 0.6.1
     resolution:
       integrity: sha512-eYk2dCkxR07DsHA/X2hRBj0CFAZeri/LyDMc0C8JT1Hqi6JnVpMhJ7XFITbb0+yZS3lVkaPL2oCkZ3AVmeVbMw==
-  /eslint-config-aqua/7.2.1_039e870a8cd2f2225cb9ca9bacdbd7e2:
+  /eslint-config-aqua/7.2.1_6f1b618af774024e27876dd9bf4b3e62:
     dependencies:
       eslint: 6.8.0
       eslint-config-prettier: 6.9.0_eslint@6.8.0
-      eslint-plugin-prettier: 3.1.2_eslint@6.8.0+prettier@1.19.1
-      prettier: 1.19.1
+      eslint-plugin-prettier: 3.1.2_eslint@6.8.0+prettier@2.0.0
+      prettier: 2.0.0
     dev: true
     engines:
       node: '>=10'
@@ -5380,9 +5380,9 @@ packages:
         optional: true
     resolution:
       integrity: sha512-GXRpVRoxD4qIriJ7/8+XCG5P04gtT/Yqwv1u0b6X8X5ue/JouFCpRWTnhktNVVrafeq7ObLbAJG99rbb3MsVww==
-  /eslint-config-marine/6.0.0_039e870a8cd2f2225cb9ca9bacdbd7e2:
+  /eslint-config-marine/6.0.0_6f1b618af774024e27876dd9bf4b3e62:
     dependencies:
-      eslint-config-aqua: 7.2.1_039e870a8cd2f2225cb9ca9bacdbd7e2
+      eslint-config-aqua: 7.2.1_6f1b618af774024e27876dd9bf4b3e62
     dev: true
     peerDependencies:
       eslint: '*'
@@ -5401,10 +5401,10 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-k4E14HBtcLv0uqThaI6I/n1LEqROp8XaPu6SO9Z32u5NlGRC07Enu1Bh2KEFw4FNHbekH8yzbIU9kUGxbiGmCA==
-  /eslint-plugin-prettier/3.1.2_eslint@6.8.0+prettier@1.19.1:
+  /eslint-plugin-prettier/3.1.2_eslint@6.8.0+prettier@2.0.0:
     dependencies:
       eslint: 6.8.0
-      prettier: 1.19.1
+      prettier: 2.0.0
       prettier-linter-helpers: 1.0.0
     dev: true
     engines:
@@ -9728,12 +9728,12 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
-  /prettier/1.19.1:
+  /prettier/2.0.0:
     engines:
-      node: '>=4'
+      node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+      integrity: sha512-vI55PC+GFLOVtpwr2di1mYhJF36v+kztJov8sx3AmqbfdA+2Dhozxb+3e1hTgoV9lyhnVJFF3Z8GCVeMBOS1bA==
   /pretty-bytes/5.3.0:
     engines:
       node: '>=6'
@@ -12620,6 +12620,7 @@ packages:
       node: '>= 6'
     name: request
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/cypress-io/request/tar.gz/b5af0d1fa47eec97ba980cde90a13e69a2afcd16'
     version: 2.88.1
 specifiers:
@@ -12676,7 +12677,7 @@ specifiers:
   jest-marbles: ^2.5.0
   jest-preset-angular: 8.1.2
   nanoid: ^2.1.8
-  prettier: ^1.19.1
+  prettier: ^2.0.0
   reflect-metadata: ^0.1.13
   rxjs: ~6.5.4
   ts-jest: 25.2.1
