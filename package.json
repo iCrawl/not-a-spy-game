@@ -88,7 +88,7 @@
 		"eslint-config-marine": "^6.0.0",
 		"eslint-config-prettier": "^6.9.0",
 		"eslint-plugin-prettier": "^3.1.2",
-		"jest": "25.2.4",
+		"jest": "25.2.6",
 		"jest-marbles": "^2.5.0",
 		"jest-preset-angular": "8.1.3",
 		"prettier": "^2.0.0",
