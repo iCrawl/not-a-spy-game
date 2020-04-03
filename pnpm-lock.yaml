@@ -39,7 +39,7 @@ devDependencies:
   '@nrwl/node': 9.2.2_697bfdf9ca5a57777c623fd243ff98c1
   '@nrwl/workspace': 9.2.2_prettier@2.0.0
   '@types/express': 4.17.2
-  '@types/jest': 25.1.5
+  '@types/jest': 25.2.0
   '@types/nanoid': 2.1.0
   '@types/node': 13.5.0
   '@types/supertest': 2.0.8
@@ -2116,13 +2116,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-UpYjBi8xefVChsCoBpKShdxTllC9pwISirfoZsUa2AAdQg/Jd2KQGtSbw+ya7GPo7x/wAPlH6JBhKhAsXUEZNA==
-  /@types/jest/25.1.5:
+  /@types/jest/25.2.0:
     dependencies:
-      jest-diff: 25.1.0
-      pretty-format: 25.1.0
+      jest-diff: 25.2.6
+      pretty-format: 25.2.6
     dev: true
     resolution:
-      integrity: sha512-FBmb9YZHoEOH56Xo/PIYtfuyTL0IzJLM3Hy0Sqc82nn5eqqXgefKcl/eMgChM8eSGVfoDee8cdlj7K74T8a6Yg==
+      integrity: sha512-ZTAGZnTWcMWdeBPnt0+XHVZpECqEP5grP+aukXVTplJPTQmJQqu0X9fdUu+jN4qYIPsnKG++7MNJz8rFli1rMg==
   /@types/jquery/3.3.31:
     dependencies:
       '@types/sizzle': 2.3.2
@@ -6701,17 +6701,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-qMfrTs8AdJE2iqrTp0hzh7kTd2PQWrsFyj9tORoKmu32xjPjeE4NyjVRDz8ybYwqS2ik8N4hsIpiVTyFeo2lBQ==
-  /jest-diff/25.1.0:
-    dependencies:
-      chalk: 3.0.0
-      diff-sequences: 25.2.6
-      jest-get-type: 25.2.6
-      pretty-format: 25.2.6
-    dev: true
-    engines:
-      node: '>= 8.3'
-    resolution:
-      integrity: sha512-nepXgajT+h017APJTreSieh4zCqnSHEJ1iT8HDlewu630lSJ4Kjjr9KNzm+kzGwwcpsDE6Snx1GJGzzsefaEHw==
   /jest-diff/25.2.6:
     dependencies:
       chalk: 3.0.0
@@ -9230,17 +9219,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-00ZMZUiHaJrNfk33guavqgvfJS30sLYf0f8+Srklv0AMPodGGHcoHgksZ3OThYnIvOd+8yMCn0YiEOogjlgsnA==
-  /pretty-format/25.1.0:
-    dependencies:
-      '@jest/types': 25.2.6
-      ansi-regex: 5.0.0
-      ansi-styles: 4.2.1
-      react-is: 16.13.1
-    dev: true
-    engines:
-      node: '>= 8.3'
-    resolution:
-      integrity: sha512-46zLRSGLd02Rp+Lhad9zzuNZ+swunitn8zIpfD2B4OPCRLXbM87RJT2aBLBWYOznNUML/2l/ReMyWNC80PJBUQ==
   /pretty-format/25.2.3:
     dependencies:
       '@jest/types': 25.2.3
@@ -12063,7 +12041,7 @@ specifiers:
   '@nrwl/node': 9.2.2
   '@nrwl/workspace': 9.2.2
   '@types/express': ^4.17.1
-  '@types/jest': 25.1.5
+  '@types/jest': 25.2.0
   '@types/nanoid': ^2.1.0
   '@types/node': ^13.1.1
   '@types/supertest': ^2.0.8
