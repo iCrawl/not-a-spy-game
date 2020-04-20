@@ -59,7 +59,7 @@ devDependencies:
   jest-preset-angular: 8.1.3_9b5a13d64506e72a2814a8ce3f9c0eb0
   prettier: 2.0.0
   ts-jest: 25.4.0_jest@25.4.0+typescript@3.7.5
-  ts-node: 8.8.0_typescript@3.7.5
+  ts-node: 8.9.0_typescript@3.7.5
   tslint: 6.1.0_typescript@3.7.5
   typescript: 3.7.5
 lockfileVersion: 5.1
@@ -11542,12 +11542,12 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-XYsjfnRQCBum9AMRZpk2rTYSVpdZBpZK+kDh0TeT3kxmQNBDVIeUjdPjY5RZry4eIAb8XHc4gYSUiUWPYvzSRw==
-  /ts-node/8.8.0_typescript@3.7.5:
+  /ts-node/8.9.0_typescript@3.7.5:
     dependencies:
       arg: 4.1.3
       diff: 4.0.2
       make-error: 1.3.6
-      source-map-support: 0.5.16
+      source-map-support: 0.5.17
       typescript: 3.7.5
       yn: 3.1.1
     dev: true
@@ -11557,7 +11557,7 @@ packages:
     peerDependencies:
       typescript: '>=2.7'
     resolution:
-      integrity: sha512-cHZpac2e71Df6/kC7AmqXObjHLs+oooxXmBqeiml9TBJk1Car9IsF12iPEeXxYVqwN/b/ZLoAsRcQ587wdwSkw==
+      integrity: sha512-rwkXfOs9zmoHrV8xE++dmNd6ZIS+nmHHCxcV53ekGJrxFLMbp+pizpPS07ARvhwneCIECPppOwbZHvw9sQtU4w==
   /tsconfig-paths-webpack-plugin/3.2.0:
     dependencies:
       chalk: 2.4.2
@@ -12513,7 +12513,7 @@ specifiers:
   reflect-metadata: ^0.1.13
   rxjs: ~6.5.4
   ts-jest: 25.4.0
-  ts-node: ~8.8.0
+  ts-node: ~8.9.0
   tslib: ~1.11.0
   tslint: ~6.1.0
   typescript: ~3.7.0
