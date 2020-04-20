@@ -18,7 +18,7 @@ dependencies:
   '@ngrx/entity': 9.0.0_9a1134aa620803cbdbb0531cafc33e3b
   '@ngrx/store': 9.0.0_@angular+core@9.1.0+rxjs@6.5.4
   '@ngrx/store-devtools': 9.0.0_@ngrx+store@9.0.0+rxjs@6.5.4
-  '@nrwl/angular': 9.2.2_2ae6dcf55d6942135e1a57239ca23be0
+  '@nrwl/angular': 9.2.2_678fc37deeadb2c6364335dcc2fe9412
   nanoid: 2.1.10
   reflect-metadata: 0.1.13
   rxjs: 6.5.4
@@ -33,7 +33,7 @@ devDependencies:
   '@nestjs/schematics': 7.0.0_typescript@3.7.5
   '@nestjs/testing': 7.0.0_59ecdc2ae1cb627d257b1c373f982e64
   '@ngrx/schematics': 9.0.0
-  '@nrwl/cypress': 9.2.2_8f3fcc0684e3f576be5ec819b12dbeea
+  '@nrwl/cypress': 9.2.2_1c8f2d13ecdda95404a9cb6600418ecb
   '@nrwl/jest': 9.2.2_@nrwl+workspace@9.2.2
   '@nrwl/nest': 9.2.2_697bfdf9ca5a57777c623fd243ff98c1
   '@nrwl/node': 9.2.2_697bfdf9ca5a57777c623fd243ff98c1
@@ -48,7 +48,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin-tslint': 2.17.0_f76f7700bf70e97b6ae3585f2dc553fe
   '@typescript-eslint/parser': 2.17.0_eslint@6.8.0+typescript@3.7.5
   codelyzer: 5.2.1_1d825ae2e76debe9ad24270ea99a00f6
-  cypress: 4.4.0
+  cypress: 4.4.1
   dotenv: 8.2.0
   eslint: 6.8.0
   eslint-config-marine: 6.0.0_6f1b618af774024e27876dd9bf4b3e62
@@ -1861,10 +1861,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FwbuYN9KXBkloLeIR3xRgI8dyOdfK/KzaJlChszNuwmUXD1lHXfLlSeo4n4KrKt2udIK9K9/TzlnyCA3ubM2fA==
-  /@nrwl/angular/9.2.2_2ae6dcf55d6942135e1a57239ca23be0:
+  /@nrwl/angular/9.2.2_678fc37deeadb2c6364335dcc2fe9412:
     dependencies:
       '@angular-devkit/schematics': 9.1.0
-      '@nrwl/cypress': 9.2.2_8f3fcc0684e3f576be5ec819b12dbeea
+      '@nrwl/cypress': 9.2.2_1c8f2d13ecdda95404a9cb6600418ecb
       '@nrwl/jest': 9.2.2_@nrwl+workspace@9.2.2
       '@nrwl/workspace': 9.2.2_prettier@2.0.0
       '@schematics/angular': 9.1.0
@@ -1888,13 +1888,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-sMPd1Q7yl6nGXldJPrwgQCPd7R+vaDeg7kcaCCZdhP2JuuayFTmPXm/4fLyi4iCzNdV4KFKQ+PS0764JdBvXBQ==
-  /@nrwl/cypress/9.2.2_8f3fcc0684e3f576be5ec819b12dbeea:
+  /@nrwl/cypress/9.2.2_1c8f2d13ecdda95404a9cb6600418ecb:
     dependencies:
       '@angular-devkit/architect': 0.901.0
       '@angular-devkit/core': 9.1.0
       '@cypress/webpack-preprocessor': 4.1.3
       '@nrwl/workspace': 9.2.2_prettier@2.0.0
-      cypress: 4.4.0
+      cypress: 4.4.1
       fork-ts-checker-webpack-plugin: 3.1.1
       tree-kill: 1.2.2
       ts-loader: 5.4.5_typescript@3.7.5
@@ -2119,7 +2119,7 @@ packages:
   /@types/chai-jquery/1.1.40:
     dependencies:
       '@types/chai': 4.2.11
-      '@types/jquery': 3.3.34
+      '@types/jquery': 3.3.35
     resolution:
       integrity: sha512-mCNEZ3GKP7T7kftKeIs7QmfZZQM7hslGSpYzKbOlR2a2HCFf9ph4nlMRA9UnuOETeOQYJVhJQK7MwGqNZVyUtQ==
   /@types/chai/4.2.11:
@@ -2201,11 +2201,11 @@ packages:
       '@types/sizzle': 2.3.2
     resolution:
       integrity: sha512-Lz4BAJihoFw5nRzKvg4nawXPzutkv7wmfQ5121avptaSIXlDNJCUuxZxX/G+9EVidZGuO0UBlk+YjKbwRKJigg==
-  /@types/jquery/3.3.34:
+  /@types/jquery/3.3.35:
     dependencies:
       '@types/sizzle': 2.3.2
     resolution:
-      integrity: sha512-lW9vsVL53Xu/Nj4gi2hNmHGc4u3KKghjqTkAlO0kF5GIOPxbqqnQpgqJBzmn3yXLrPqHb6cmNJ6URnS23Vtvbg==
+      integrity: sha512-pnIELWhHXJ7RgoFylhiTxD+96QlKBJfEx8JCLj963/dh7zBOKFkZ6rlNqbaCcn2JZrsAxCI8WhgRXznBx2iDsA==
   /@types/json-schema/7.0.4:
     dev: true
     resolution:
@@ -4335,7 +4335,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
-  /cypress/4.4.0:
+  /cypress/4.4.1:
     dependencies:
       '@cypress/listr-verbose-renderer': 0.4.1
       '@cypress/request': 2.88.5
@@ -4388,7 +4388,7 @@ packages:
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-ZpsV3pVemANGi4Cxu0UIqFv23uHdDJZYlKY+8P/eixujCpI1TQ5RSPBp2grfV3ZvlGYrOXPJY44j9iEh1xoQug==
+      integrity: sha512-LcskZ/PXRG9XTlEeeenKqz/KddT1x+7O7dqXsdKWPII01LxLNmNHIvHnlUqApchVbinJ5vir6J255CkELSeL0A==
   /d/1.0.1:
     dependencies:
       es5-ext: 0.10.53
@@ -12267,7 +12267,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin-tslint': ^2.11.0
   '@typescript-eslint/parser': ^2.11.0
   codelyzer: ^5.1.2
-  cypress: 4.4.0
+  cypress: 4.4.1
   dotenv: 8.2.0
   eslint: ^6.7.2
   eslint-config-marine: ^6.0.0
