@@ -58,7 +58,7 @@ devDependencies:
   jest-marbles: 2.5.1_rxjs@6.5.4
   jest-preset-angular: 8.2.0_45c83d84c4cc5c7235601f340b6346ea
   prettier: 2.0.0
-  ts-jest: 25.5.0_jest@26.0.1+typescript@3.7.5
+  ts-jest: 25.5.1_jest@26.0.1+typescript@3.7.5
   ts-node: 8.10.0_typescript@3.7.5
   tslint: 6.1.0_typescript@3.7.5
   typescript: 3.7.5
@@ -12253,6 +12253,29 @@ packages:
       typescript: '>=3.4 <4.0'
     resolution:
       integrity: sha512-govrjbOk1UEzcJ5cX5k8X8IUtFuP3lp3mrF3ZuKtCdAOQzdeCM7qualhb/U8s8SWFwEDutOqfF5PLkJ+oaYD4w==
+  /ts-jest/25.5.1_jest@26.0.1+typescript@3.7.5:
+    dependencies:
+      bs-logger: 0.2.6
+      buffer-from: 1.1.1
+      fast-json-stable-stringify: 2.1.0
+      jest: 26.0.1
+      json5: 2.1.3
+      lodash.memoize: 4.1.2
+      make-error: 1.3.6
+      micromatch: 4.0.2
+      mkdirp: 0.5.5
+      semver: 6.3.0
+      typescript: 3.7.5
+      yargs-parser: 18.1.3
+    dev: true
+    engines:
+      node: '>= 8'
+    hasBin: true
+    peerDependencies:
+      jest: '>=25 <26'
+      typescript: '>=3.4 <4.0'
+    resolution:
+      integrity: sha512-kHEUlZMK8fn8vkxDjwbHlxXRB9dHYpyzqKIGDNxbzs+Rz+ssNDSDNusEK8Fk/sDd4xE6iKoQLfFkFVaskmTJyw==
   /ts-loader/5.4.5_typescript@3.7.5:
     dependencies:
       chalk: 2.4.2
@@ -13267,7 +13290,7 @@ specifiers:
   prettier: ^2.0.0
   reflect-metadata: ^0.1.13
   rxjs: ~6.5.4
-  ts-jest: 25.5.0
+  ts-jest: 25.5.1
   ts-node: ~8.10.0
   tslib: ~1.11.0
   tslint: ~6.1.0
