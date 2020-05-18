@@ -39,7 +39,7 @@ devDependencies:
   '@nrwl/node': 9.2.4_d734642ff4814944dbbf02c846babfdd
   '@nrwl/workspace': 9.2.4_prettier@2.0.0
   '@types/express': 4.17.2
-  '@types/jest': 25.2.2
+  '@types/jest': 25.2.3
   '@types/nanoid': 2.1.0
   '@types/node': 13.5.0
   '@types/supertest': 2.0.8
@@ -2931,13 +2931,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-UpYjBi8xefVChsCoBpKShdxTllC9pwISirfoZsUa2AAdQg/Jd2KQGtSbw+ya7GPo7x/wAPlH6JBhKhAsXUEZNA==
-  /@types/jest/25.2.2:
+  /@types/jest/25.2.3:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: true
     resolution:
-      integrity: sha512-aRctFbG8Pb7DSLzUt/fEtL3q/GKb9mretFuYhRub2J0q6NhzBYbx9HTQzHrWgBNIxYOlxGNVe6Z54cpbUt+Few==
+      integrity: sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
   /@types/jquery/3.3.31:
     dependencies:
       '@types/sizzle': 2.3.2
@@ -13253,7 +13253,7 @@ specifiers:
   '@nrwl/node': 9.2.4
   '@nrwl/workspace': 9.2.4
   '@types/express': ^4.17.1
-  '@types/jest': 25.2.2
+  '@types/jest': 25.2.3
   '@types/nanoid': ^2.1.0
   '@types/node': ^13.1.1
   '@types/supertest': ^2.0.8
