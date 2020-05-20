@@ -52,7 +52,7 @@
 		"@ngrx/store": "^9.0.0",
 		"@ngrx/store-devtools": "^9.0.0",
 		"@nrwl/angular": "9.3.0",
-		"nanoid": "^2.1.8",
+		"nanoid": "^3.0.0",
 		"reflect-metadata": "^0.1.13",
 		"rxjs": "~6.5.4",
 		"tslib": "~1.13.0",

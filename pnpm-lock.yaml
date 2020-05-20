@@ -19,7 +19,7 @@ dependencies:
   '@ngrx/store': 9.0.0_@angular+core@9.1.0+rxjs@6.5.4
   '@ngrx/store-devtools': 9.0.0_@ngrx+store@9.0.0+rxjs@6.5.4
   '@nrwl/angular': 9.3.0_ddc17fbc2919001f12275baaaf183069
-  nanoid: 2.1.10
+  nanoid: 3.1.9
   reflect-metadata: 0.1.13
   rxjs: 6.5.4
   tslib: 1.13.0
@@ -9063,10 +9063,13 @@ packages:
     optional: true
     resolution:
       integrity: sha512-isWHgVjnFjh2x2yuJ/tj3JbwoHu3UC2dX5G/88Cm24yB6YopVgxvBObDY7n5xW6ExmFhJpSEQqFPvq9zaXc8Jw==
-  /nanoid/2.1.10:
+  /nanoid/3.1.9:
     dev: false
+    engines:
+      node: ^10 || ^12 || >=13.7
+    hasBin: true
     resolution:
-      integrity: sha512-ZPUHBAwrQ+BSwVV2Xh6hBOEStTzAf8LgohOY0kk22lDiDdI32582KjVPYCqgqj7834hTunGzwZOB4me9T6ZcnA==
+      integrity: sha512-fFiXlFo4Wkuei3i6w9SQI6yuzGRTGi8Z2zZKZpUxv/bQlBi4jtbVPBSNFZHQA9PNjofWqtIa8p+pnsc0kgZrhQ==
   /nanomatch/1.2.13:
     dependencies:
       arr-diff: 4.0.0
@@ -13306,7 +13309,7 @@ specifiers:
   jest: 26.0.1
   jest-marbles: ^2.5.0
   jest-preset-angular: 8.2.0
-  nanoid: ^2.1.8
+  nanoid: ^3.0.0
   prettier: ^2.0.0
   reflect-metadata: ^0.1.13
   rxjs: ~6.5.4
