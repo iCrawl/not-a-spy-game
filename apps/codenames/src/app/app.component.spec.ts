@@ -10,7 +10,7 @@ describe('AppComponent', () => {
 	let fixture: ComponentFixture<AppComponent>;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			imports: [SharedModule, RouterTestingModule],
 			declarations: [AppComponent, HeaderComponent, FooterComponent],
 		}).compileComponents();

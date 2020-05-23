@@ -11,7 +11,7 @@ describe('HomeComponent', () => {
 	let fixture: ComponentFixture<HomeComponent>;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			imports: [NoopAnimationsModule, SharedModule, RouterTestingModule],
 			declarations: [HomeComponent, LoginComponent],
 			providers: [provideMockStore()],

@@ -25,7 +25,7 @@ describe('BoardComponent', () => {
 	};
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [BoardComponent, TileComponent],
 			providers: [provideMockStore({ initialState })],
 		}).compileComponents();

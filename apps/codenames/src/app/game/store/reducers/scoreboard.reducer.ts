@@ -9,8 +9,8 @@ const initialState: State = {
 
 const _scoreboardReducer = createReducer(
 	initialState,
-	on(ScoreboardActions.SCORE_RED, state => ({ ...state, home: state.red - 1 })),
-	on(ScoreboardActions.SCORE_BLUE, state => ({ ...state, away: state.blue - 1 })),
+	on(ScoreboardActions.SCORE_RED, (state) => ({ ...state, home: state.red - 1 })),
+	on(ScoreboardActions.SCORE_BLUE, (state) => ({ ...state, away: state.blue - 1 })),
 	on(ScoreboardActions.SCORE_RESET, () => initialState),
 	on(ScoreboardActions.SCORE_SET, (_, { scoreboard }) => ({ red: scoreboard.red, blue: scoreboard.blue })),
 );

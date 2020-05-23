@@ -6,7 +6,7 @@ import { WebSocketService } from './websocket.service';
 
 describe('WebSocketService', () => {
 	let service: WebSocketService;
-	let store: MockStore<{}>;
+	let store: MockStore<unknown>;
 	let dispatchSpy: jasmine.Spy;
 	const payload = {
 		event: Message.CREATE_ROOM,
@@ -41,14 +41,14 @@ describe('WebSocketService', () => {
 	it('should dispatch for `CREATE_ROOM`', () => {
 		service.parse(payload);
 
-		expect(dispatchSpy).toBeCalledTimes(4);
+		expect(dispatchSpy).toBeCalledTimes(5);
 	});
 
 	it('should dispatch for `JOIN_ROOM`', () => {
 		const modPayload = { ...payload, event: Message.JOIN_ROOM };
 		service.parse(modPayload);
 
-		expect(dispatchSpy).toBeCalledTimes(4);
+		expect(dispatchSpy).toBeCalledTimes(5);
 	});
 
 	it('should dispatch for `FLIP_TILE`', () => {

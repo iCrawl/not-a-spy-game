@@ -9,4 +9,4 @@ if (environment.production) {
 
 platformBrowserDynamic()
 	.bootstrapModule(AppModule)
-	.catch(err => console.error(err)); // eslint-disable-line promise/prefer-await-to-callbacks
+	.catch((err) => console.error(err));

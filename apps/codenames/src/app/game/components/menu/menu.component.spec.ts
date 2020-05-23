@@ -40,7 +40,7 @@ describe('MenuComponent', () => {
 	};
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [MenuComponent],
 			providers: [provideMockStore({ initialState })],
 		}).compileComponents();

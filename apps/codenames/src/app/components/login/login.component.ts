@@ -3,7 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Role, Team } from '@codenames/models';
 import { select, Store } from '@ngrx/store';
-import nanoid from 'nanoid';
+import { nanoid } from 'nanoid';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { App } from '../../models/app.model';
@@ -36,8 +36,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 	public ngOnInit() {
 		this.sub = this.store
 			.pipe(
-				select(state => state),
-				map(state => {
+				select((state) => state),
+				map((state) => {
 					if (state.user.loggedIn) {
 						if (state.game.tiles.length) {
 							return this.router.navigate(['/board']);

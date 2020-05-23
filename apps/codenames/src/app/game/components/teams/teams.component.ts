@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Room, Team } from '@codenames/models';
 import { select, Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
@@ -13,7 +13,7 @@ import { USER_TEAM_BLUE, USER_TEAM_RED } from '../../../store/actions/user.actio
 	templateUrl: './teams.component.html',
 	styleUrls: ['./teams.component.scss'],
 })
-export class TeamsComponent implements OnInit {
+export class TeamsComponent implements OnInit, OnDestroy {
 	public sub!: Subscription;
 
 	public user!: User;
@@ -25,8 +25,8 @@ export class TeamsComponent implements OnInit {
 	public ngOnInit() {
 		this.sub = this.store
 			.pipe(
-				select(state => state),
-				map(state => {
+				select((state) => state),
+				map((state) => {
 					this.user = state.user;
 					this.room = state.room;
 				}),
@@ -44,7 +44,7 @@ export class TeamsComponent implements OnInit {
 	}
 
 	public filterTeams(team: Team) {
-		return this.room.players.filter(player => player.team === team);
+		return this.room.players.filter((player) => player.team === team);
 	}
 
 	public randomizeTeams() {

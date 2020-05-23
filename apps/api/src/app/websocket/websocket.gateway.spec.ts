@@ -64,6 +64,7 @@ describe('WebsocketGateway', () => {
 		const p = { ...payload, player: { ...payload.player, team: Team.RED }, event: Message.SWITCH_TEAM };
 
 		expect(service.rooms[0].players[0].team).toBe(Team.UNASSIGNED);
+		// @ts-expect-error
 		expect(gateway.handleSwitchTeamMessage(p)).toStrictEqual({
 			event: Message.SWITCH_TEAM,
 			data: service.rooms[0].for(Role.GUESSER),
@@ -75,6 +76,7 @@ describe('WebsocketGateway', () => {
 		const p = { ...payload, player: { ...payload.player, role: Role.SPYMASTER }, event: Message.SWITCH_ROLE };
 
 		expect(service.rooms[0].players[0].role).toBe(Role.GUESSER);
+		// @ts-expect-error
 		expect(gateway.handleSwitchRoleMessage(p)).toStrictEqual({
 			event: Message.SWITCH_ROLE,
 			data: service.rooms[0].for(Role.SPYMASTER),
@@ -94,6 +96,7 @@ describe('WebsocketGateway', () => {
 		const p = { ...payload, event: Message.END_TURN };
 
 		expect(service.rooms[0].game.turn).toBe(Team.RED);
+		// @ts-expect-error
 		expect(gateway.handleEndTurnMessage(p)).toBe(null);
 		expect(service.rooms[0].game.turn).toBe(Team.BLUE);
 	});

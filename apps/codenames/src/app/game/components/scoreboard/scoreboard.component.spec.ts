@@ -7,7 +7,7 @@ describe('ScoreboardComponent', () => {
 	let fixture: ComponentFixture<ScoreboardComponent>;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [ScoreboardComponent],
 			providers: [provideMockStore()],
 		}).compileComponents();

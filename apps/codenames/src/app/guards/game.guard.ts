@@ -12,10 +12,10 @@ export class GameGuard implements CanActivate {
 
 	public canActivate() {
 		return this.store.pipe(
-			select(state => state.user.loggedIn),
-			map(bool => {
+			select((state) => state.user.loggedIn),
+			map((bool) => {
 				if (bool) return true;
-				this.router.navigate(['/']);
+				void this.router.navigate(['/']);
 				return false;
 			}),
 		);

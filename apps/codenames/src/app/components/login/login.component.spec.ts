@@ -9,7 +9,7 @@ import { LoginComponent } from './login.component';
 describe('LoginComponent', () => {
 	let component: LoginComponent;
 	let fixture: ComponentFixture<LoginComponent>;
-	let store: MockStore<{}>;
+	let store: MockStore<unknown>;
 	let dispatchSpy: jasmine.Spy;
 	const initialState = {
 		game: {
@@ -23,7 +23,7 @@ describe('LoginComponent', () => {
 	beforeEach(async(() => {
 		class BlankComponent {}
 
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			imports: [
 				NoopAnimationsModule,
 				SharedModule,

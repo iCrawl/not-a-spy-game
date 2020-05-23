@@ -8,9 +8,6 @@
 		"nx.json": "*"
 	},
 	"projects": {
-		"codenames-e2e": {
-			"tags": []
-		},
 		"codenames": {
 			"tags": []
 		},

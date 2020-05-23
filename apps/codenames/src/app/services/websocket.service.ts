@@ -19,7 +19,7 @@ import { USER_LOGGED_IN, USER_SET } from '../store/actions/user.actions';
 export class WebSocketService implements OnDestroy {
 	public sub!: Subscription;
 
-	public sub2!: Subscription;
+	public sub2?: Subscription;
 
 	public interval: any;
 
@@ -50,8 +50,8 @@ export class WebSocketService implements OnDestroy {
 		/* istanbul ignore next */
 		this.sub = this.store
 			.pipe(
-				select(state => state.user),
-				map(user => (this.user = user)),
+				select((state) => state.user),
+				map((user) => (this.user = user)),
 			)
 			.subscribe();
 	}
@@ -62,7 +62,7 @@ export class WebSocketService implements OnDestroy {
 
 	public webSocket() {
 		if (this.sub2 && !this.sub2.closed) this.sub2.unsubscribe();
-		this.sub2 = this.subject.subscribe(msg => this.parse(msg));
+		this.sub2 = this.subject.subscribe((msg) => this.parse(msg));
 	}
 
 	public heartbeat() {

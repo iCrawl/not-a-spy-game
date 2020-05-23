@@ -28,16 +28,16 @@ export class BoardComponent implements OnInit {
 	public constructor(private readonly store: Store<App>) {}
 
 	public ngOnInit() {
-		this.tiles$ = this.store.select(state => state.game.tiles);
+		this.tiles$ = this.store.select((state) => state.game.tiles);
 		this.disabled$ = this.store.pipe(
-			select(state => state),
-			map(state => {
+			select((state) => state),
+			map((state) => {
 				if (state.user.team === Team.UNASSIGNED) return true;
 				if (state.game.turn !== state.user.team) return true;
 				if (state.game.scoreboard.red === 0 || state.game.scoreboard.blue === 0) return true;
 				return false;
 			}),
 		);
-		this.spymaster$ = this.store.select(state => state.user.role === Role.SPYMASTER);
+		this.spymaster$ = this.store.select((state) => state.user.role === Role.SPYMASTER);
 	}
 }

@@ -15,7 +15,7 @@ describe('BoardGuard', () => {
 	};
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			imports: [RouterTestingModule],
 			providers: [provideMockStore({ initialState })],
 		}).compileComponents();

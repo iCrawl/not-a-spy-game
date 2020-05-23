@@ -8,7 +8,7 @@ describe('HeaderComponent', () => {
 	let element: HTMLElement;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			imports: [SharedModule],
 			declarations: [HeaderComponent],
 		}).compileComponents();

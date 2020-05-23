@@ -41,7 +41,7 @@ describe('TeamsComponent', () => {
 	};
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [TeamsComponent, HighlightPlayerPipe],
 			providers: [provideMockStore({ initialState })],
 		}).compileComponents();

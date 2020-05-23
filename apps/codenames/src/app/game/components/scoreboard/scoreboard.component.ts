@@ -18,6 +18,6 @@ export class ScoreboardComponent implements OnInit {
 	public constructor(private readonly store: Store<App>) {}
 
 	public ngOnInit() {
-		this.game$ = this.store.pipe(select(state => state.game));
+		this.game$ = this.store.pipe(select((state) => state.game));
 	}
 }

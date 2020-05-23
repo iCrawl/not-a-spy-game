@@ -54,8 +54,8 @@ export class TileComponent implements OnInit, OnDestroy {
 	public ngOnInit() {
 		this.sub = this.store
 			.pipe(
-				select(state => state),
-				map(state => {
+				select((state) => state),
+				map((state) => {
 					this.room = state.room;
 					this.game = state.game;
 				}),

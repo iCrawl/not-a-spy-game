@@ -6,7 +6,7 @@ describe('FooterComponent', () => {
 	let fixture: ComponentFixture<FooterComponent>;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [FooterComponent],
 		}).compileComponents();
 	}));

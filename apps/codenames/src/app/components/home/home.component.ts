@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'codenames-home',
-	template: `
-		<codenames-login></codenames-login>
-	`,
+	template: ` <codenames-login></codenames-login> `,
 	styles: [
 		`
 			:host {

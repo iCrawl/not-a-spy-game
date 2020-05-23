@@ -41,7 +41,7 @@ describe('HomeComponent', () => {
 	};
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [
 				GameComponent,
 				ScoreboardComponent,

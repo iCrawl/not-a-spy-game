@@ -7,7 +7,7 @@ describe('TileComponent', () => {
 	let fixture: ComponentFixture<TileComponent>;
 
 	beforeEach(async(() => {
-		TestBed.configureTestingModule({
+		void TestBed.configureTestingModule({
 			declarations: [TileComponent],
 			providers: [provideMockStore()],
 		}).compileComponents();

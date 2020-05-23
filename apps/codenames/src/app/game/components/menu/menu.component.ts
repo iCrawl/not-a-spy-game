@@ -44,14 +44,14 @@ export class MenuComponent implements OnInit, OnDestroy {
 	public constructor(private readonly store: Store<App>, private readonly webSocketService: WebSocketService) {}
 
 	public get spymaster() {
-		return this.room.players.some(player => player.team === this.user.team && player.role === Role.SPYMASTER);
+		return this.room.players.some((player) => player.team === this.user.team && player.role === Role.SPYMASTER);
 	}
 
 	public ngOnInit() {
 		this.sub = this.store
 			.pipe(
-				select(state => state),
-				map(state => {
+				select((state) => state),
+				map((state) => {
 					this.user = state.user;
 					this.room = state.room;
 					this.game = state.game;
