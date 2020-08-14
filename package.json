@@ -60,7 +60,7 @@
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "^0.901.7",
-		"@angular-eslint/builder": "0.0.1-alpha.32",
+		"@angular-eslint/builder": "0.0.1-alpha.33",
 		"@angular-eslint/eslint-plugin": "0.0.1-alpha.32",
 		"@angular-eslint/eslint-plugin-template": "0.0.1-alpha.32",
 		"@angular-eslint/template-parser": "0.0.1-alpha.33",
