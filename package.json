@@ -44,7 +44,7 @@
 		"@angular/router": "^9.1.9",
 		"@nestjs/common": "^7.4.3",
 		"@nestjs/core": "^7.4.3",
-		"@nestjs/platform-express": "^7.4.2",
+		"@nestjs/platform-express": "^7.4.3",
 		"@nestjs/platform-ws": "^7.4.3",
 		"@nestjs/websockets": "^7.4.3",
 		"@ngrx/effects": "^9.1.2",
