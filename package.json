@@ -69,7 +69,7 @@
 		"@angular/language-service": "^10.0.14",
 		"@nestjs/cli": "^7.5.1",
 		"@nestjs/schematics": "^7.1.1",
-		"@nestjs/testing": "^7.4.2",
+		"@nestjs/testing": "^7.4.3",
 		"@ngrx/schematics": "^10.0.0",
 		"@nrwl/cypress": "^9.3.0",
 		"@nrwl/jest": "^9.3.0",
