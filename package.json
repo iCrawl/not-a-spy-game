@@ -64,7 +64,7 @@
 		"@angular-eslint/eslint-plugin": "0.0.1-alpha.33",
 		"@angular-eslint/eslint-plugin-template": "0.0.1-alpha.33",
 		"@angular-eslint/template-parser": "0.0.1-alpha.33",
-		"@angular/cli": "^9.1.11",
+		"@angular/cli": "^10.1.0",
 		"@angular/compiler-cli": "^9.1.9",
 		"@angular/language-service": "^10.1.1",
 		"@nestjs/cli": "^7.5.1",
