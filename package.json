@@ -92,7 +92,7 @@
 		"eslint-plugin-prettier": "^3.1.4",
 		"jest": "^26.6.0",
 		"jest-marbles": "^2.5.1",
-		"jest-preset-angular": "^8.3.1",
+		"jest-preset-angular": "^8.3.2",
 		"prettier": "^2.1.2",
 		"ts-jest": "^26.4.1",
 		"ts-node": "^9.0.0",
