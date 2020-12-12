@@ -67,7 +67,7 @@
 		"@angular/cli": "^9.1.11",
 		"@angular/compiler-cli": "^9.1.9",
 		"@angular/language-service": "^11.0.3",
-		"@nestjs/cli": "^7.5.3",
+		"@nestjs/cli": "^7.5.4",
 		"@nestjs/schematics": "^7.2.5",
 		"@nestjs/testing": "^7.6.1",
 		"@ngrx/schematics": "^10.1.0",
