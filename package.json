@@ -86,7 +86,7 @@
 		"@typescript-eslint/parser": "^4.13.0",
 		"cypress": "^4.12.1",
 		"dotenv": "^8.2.0",
-		"eslint": "^7.17.0",
+		"eslint": "^7.18.0",
 		"eslint-config-marine": "^8.1.0",
 		"eslint-config-prettier": "^7.1.0",
 		"eslint-plugin-prettier": "^3.3.1",
