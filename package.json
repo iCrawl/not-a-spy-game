@@ -45,7 +45,7 @@
 		"@nestjs/common": "^7.6.5",
 		"@nestjs/core": "^7.6.5",
 		"@nestjs/platform-express": "^7.6.5",
-		"@nestjs/platform-ws": "^7.6.5",
+		"@nestjs/platform-ws": "^7.6.6",
 		"@nestjs/websockets": "^7.6.5",
 		"@ngrx/effects": "^9.1.2",
 		"@ngrx/entity": "^9.1.2",
