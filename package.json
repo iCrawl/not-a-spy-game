@@ -73,7 +73,7 @@
 		"@ngrx/schematics": "^10.1.2",
 		"@nrwl/cypress": "^9.3.0",
 		"@nrwl/jest": "^9.3.0",
-		"@nrwl/nest": "^9.3.0",
+		"@nrwl/nest": "^11.2.7",
 		"@nrwl/node": "^9.3.0",
 		"@nrwl/workspace": "^9.3.0",
 		"@types/express": "^4.17.11",
