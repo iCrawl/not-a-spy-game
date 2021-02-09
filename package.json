@@ -70,7 +70,7 @@
 		"@nestjs/cli": "^7.5.4",
 		"@nestjs/schematics": "^7.2.7",
 		"@nestjs/testing": "^7.6.11",
-		"@ngrx/schematics": "^10.1.2",
+		"@ngrx/schematics": "^11.0.0",
 		"@nrwl/cypress": "^9.3.0",
 		"@nrwl/jest": "^9.3.0",
 		"@nrwl/nest": "^9.3.0",
